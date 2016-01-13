@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Building software always comes with cost. And possibly more importantly, running software also incurs cost. We need ways to effectively quantify the cost of these activities">
+<meta name="author" content="">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/prettyPhoto.css" rel="stylesheet">
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/respond.min.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="/images/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+  <body>
+  <header id="header">
+  <nav class="navbar navbar-inverse" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html"><h2 style="color: white;">Richard's Technologies</h2></a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="https://www.youtube.com/channel/UCYph0_OwBoJrg557dgW3MOA">YouTube</a></li>
+          <li><a href="http://www.slideshare.net/rimaoka/presentations">SlideShare</a></li>
+          <li><a href="https://speakerdeck.com/rimaoka">SpeakerDeck</a></li>
+          <li><a href="https://github.com/ri-tech">GitHub</a></li>
+        </ul>
+      </div>
+    </div><!--/.container-->
+  </nav><!--/nav-->
+
+</header><!--/header-->
+    <section id="blog" class="container">
+      <div class="center">
+  <h2>Richard Imaoka's blog</h2>
+</div>
+      <div class="blog">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="blog-item">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 blog-content">
+                  <h1>Financial Engineering of software projects</h1>
+
+<p>Through the history of computers, we have seen explosive growth in the software industry, and people have made tremendous but still ever-growing investment in technologies and methodologies in software development.</p>
+
+<p>Yet there is a question the software industry has not provided right ways to answer...</p>
+
+<h2>Do you want to invest in this software project?</h2>
+
+<div style="text-align:center">
+  <figure>
+    <img src="/images/posts/ID-10056727.jpg" style="width: 100%; max-width: 400px">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</div>
+
+<p>This is still a very subjective question. People usually depend on experienced programmers or project managers to give estimate on how long a project takes, and it often turns out to be <strong>wrong</strong>.</p>
+
+<p>In a series of blog articles, I am going to build <strong>scientific</strong> and <strong>quantitative</strong> methodologies to answer to the above question, leveraging frameworks developed in financial engineering.</p>
+
+<h2>The software industry has focused on <strong>"how"</strong> to build software better</h2>
+
+<p>
+  There has been an uncountable number of software development methodologies people have come up with, and tried.
+  ( You can see some of these in <a href="https://en.wikipedia.org/wiki/Software_development_process">"Software development process" in Wikipedia</a> ).
+</p>
+
+<p>
+  Project management styles like:
+
+  <ul>
+      <li>Waterfall method</li>
+      <li>Agile methodologies</li>
+  </ul>
+
+  Programming styles as:
+
+  <ul>
+    <li>Object Oriented Programming</li>
+    <li>Functional Programming</li>
+  </ul>
+
+  or testing styles like:
+
+  <ul>
+    <li>Test Driven Development</li>
+    <li>Behavior Driven Development</li>
+  </ul>
+
+  Also application architectures:
+
+  <ul>
+    <li>Monolithic architecture</li>
+    <li>Micro Services</li>
+  </ul>
+
+  There is a lot more different methodologies in many different aspects of software development.
+</p>
+
+<p>
+  Lessons, best practices were learnt and shared within the industry, and nowadays people use very sophisticated ways in developing their software, however...
+</p>
+
+<h2><strong>"Whether"</strong> to invest in a software project ... ?</h2>
+
+<p>We don't know the answer to the question yet.</p>
+
+<p>Yes, it's still crucial to be familiar with software development methodologies and technologies like above, for a successful project.</p>
+
+<p>However, no matter how good you are as a programmer, or as a project manager, still software development takes longer than people would usually expect, and stakeholders are upset by delay or even failure of project delivery.</p>
+
+<p>
+  So you want to know... :
+  <ul style="color: #ff0000; font-size: 1.5em">
+    <li><strong>How long does the project take?</strong></li>
+    <li><strong>How much cost does it incur?</strong></li>
+  </ul>
+  but how can we tell?
+</p>
+
+<h2>Uncertainty, which financial engineering has dealt with in its long history</h2>
+
+<div style="text-align:center">
+  <figure>
+    <img src="/images/posts/questions.jpg" style="width: 100%; max-width: 400px">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/question-mark-on-cubes-shows-uncertainty-photo-p175169">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</div>
+
+<p>We  need to admit it is <strong>impossible</strong> to know exactly when a project is finished, at the beginning.</p>
+
+<p>You are deliberately facing <strong>uncertainty</strong> in project planning, since software development is doing something new in most cases.</p>
+
+<p>
+  So,
+  <ul>
+    <li>Don't rely on, or keep relying on a single number which you estimated at the beginning</li>
+    <li>Rather, think in a "range" of possible outcomes (e.g. project delivery date) given uncertainty</li>
+  </ul>
+  Illustration of this concept is as follows:
+</p>
+
+<div style="text-align:center">
+  <figure>
+    <img src="/images/posts/uncertainty.png" style="width: 100%; max-width: 498px">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</div>
+
+<p>
+  Financial engineering frameworks have a long history of dealing with uncertainty, and provided ways to still make decisions even though you cannot accurately estimate the outcome.
+  Let's enter in the frameworks and in the field from the next article in the series.
+</p>
+                </div>
+              </div>
+            </div><!--/.blog-item-->
+          </div><!--/.col-md-8-->
+
+          <aside class="col-md-4">
+
+  <div class="widget archieve">
+
+    
+    <h2><a href="/posts/financial-engineering-in-software-projects">Financial Engineering of Software Projects</a></h2>
+    
+    <h2><a href="/posts/about">About Richard Imaoka</a></h2>
+    
+
+  </div><!--/.archieve-->
+
+</aside>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+  <script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.prettyPhoto.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/wow.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72224382-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
