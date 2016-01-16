@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I found an interesting paper - 'Stochastic Cost Estimation and Risk Analysis in Managing Software Projects' - which presents a method to analyze project duration using Monte Carlo Simulation. Monte Carlo is a typical simulation method in Financial Engineering, so it's interesting to see the bridge between Financial Engineering and Quantitative Software Engineering">
+<meta name="author" content="">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/prettyPhoto.css" rel="stylesheet">
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/respond.min.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="/images/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+  <body>
+  <header id="header">
+  <nav class="navbar navbar-inverse" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html"><h2 style="color: white;">Richard's Technologies</h2></a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="https://www.youtube.com/channel/UCYph0_OwBoJrg557dgW3MOA">YouTube</a></li>
+          <li><a href="http://www.slideshare.net/rimaoka/presentations">SlideShare</a></li>
+          <li><a href="https://speakerdeck.com/rimaoka">SpeakerDeck</a></li>
+          <li><a href="https://github.com/ri-tech">GitHub</a></li>
+        </ul>
+      </div>
+    </div><!--/.container-->
+  </nav><!--/nav-->
+
+</header><!--/header-->
+    <section id="blog" class="container">
+      <div class="center">
+  <h2>Richard Imaoka's blog</h2>
+</div>
+      <div class="blog">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="blog-item">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 blog-content">
+                  <h1>Review of 'Stochastic Cost Estimation and Risk Analysis in Managing Software Projects' paper</h1>
+                  <p>I found an interesting paper - 'Stochastic Cost Estimation and Risk Analysis in Managing Software Projects' - which presents a method to analyze project duration using Monte Carlo Simulation. Monte Carlo is a typical simulation method in Financial Engineering, so it's interesting to see the bridge between Financial Engineering and Quantitative Software Engineering</p>
+                  <p style="text-align: center">
+  <a href="http://aut.researchgateway.ac.nz/handle/10292/1591">"Stochastic cost estimation and risk analysis in managing software projects"</a>
+</p>
+
+<p>You can dowload the paper from the above link.</p>
+
+<h2>Monte Carlo Simulation in Finance</h2>
+
+<p>
+  Monte Carlo is a typical simulation technique for a random process,
+  In Financial Engineering, it is commonly used to calculate the price of an asset, especially complicated derivative assets.
+</p>
+
+<p>
+  Very briefly, it works as:
+  <ul>
+    <li>You model a random price movement of an asset (model means a Mathematical equation to describe the movement)</li>
+    <li>Run a simulation and then you see  a random price movement path</li>
+    <li>Repeat the simulation multiple times (1,000, 10,000, or 100,000 ... dependent on the problem)</li>
+    <li>See the resulting probability distribution, and take the average</li>
+  </ul>
+</p>
+
+<figure style="text-align:center">
+  <a title="By Sc1171 (Own work) [CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AMonte_carlo_simulation.png">
+    <img style="max-width: 512px; width: 100%" alt="Monte carlo simulation" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Monte_carlo_simulation.png">
+  </a>
+  <figcaption>By Sc1171 (Own work) [(<a href="http://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)], via Wikimedia Commons</figcaption>
+</figure>
+
+<p>
+  Using Monte Carlo for a simple model like stock price doesn't make much sense, but <strong>Monte Carlo</strong> is a powerful tool for <strong>pricing complicated derivative</strong> assets,
+  where the pricing model is too complicated to derive an answer (i.e. the price) mathematically.
+  If you cannot solve the price mathematically, then Monte Carlo allows you to still price the derivative asset with a large number of simulations.
+</p>
+
+<h2>Monte Carlo in Software Engineering</h2>
+
+<p>So, how this paper used the Monte Carlo technique to estimate the software project risk? Firstly, it split a software project into multiple phases</p>
+
+<p>
+  <ul>
+    <li><strong>Planning and Bid Preparation</strong></li>
+    <li><strong>Requirements Definition</strong></li>
+    <li><strong>Analysis and Design</strong></li>
+    <li><strong>Code and Debug</strong></li>
+    <li><strong>Integrate and Test</strong></li>
+    <li><strong>Deployment and Acceptance</strong></li>
+  </ul>
+</p>
+
+<p>
+  Each phase of this is modeled as a random process (i.e.) it has a range of possible completion dates.
+  And each phase is modeled as a different a different random (e.g. different standard deviation, etc).
+</p>
+
+<p>The below is a figure from the paper, showing the results of 5,000 Monte Carlo simulations of the entire project.</p>
+
+<figure style="text-align:center">
+  <img src="/images/posts/monte-carlo.png" style="width: 100%; max-width: 787px">
+</figure>
+
+<h2>What are the benefits, and challenges?</h2>
+
+<h3>Benefits</h3>
+
+<p>The paper provided a basic, but a powerful and standard framework to see how the possible project completion date distribution would look like. It is very similar to derivative pricing with Monte Carlo in Finance.</p>
+
+<p>Over time, you can tweak the model for each project phase, comparing the simulation with past-completed projects, and the models would be expected to be more accurate.</p>
+
+<h3>Challenges</h3>
+
+<p>There could be problems though, since it weighs historical data to predict the possible future project completion. If new technologies are introduced and they completely change the game, which is typical, historical projects do not predict future projects well.</p>
+
+<p>Also this paper is based on Water-fall like project style. Maybe Agile projects need a bit different modeling.</p>
+
+<p>However, this is still an informative paper providing probabilistic view on software project management.</p>
+
+<div>
+  <h2>References</h2>
+  <div class="references">
+    <ol>
+      
+      <li>Connor, AM; MacDonell, SG, <a href="http://aut.researchgateway.ac.nz/handle/10292/1591"><strong>"Stochastic cost estimation and risk analysis in managing software projects"</strong></a>, Proceedings of the ISCA 14th International Conference on Intelligent and Adaptive Systems and Software Engineering (IASSE). Toronto, Canada, ISCA, pp.140-144</li>
+      
+    </ol>
+  </div>
+</div>
+                </div>
+              </div>
+            </div><!--/.blog-item-->
+          </div><!--/.col-md-8-->
+
+          <aside class="col-md-4">
+
+  <div class="widget archieve">
+
+    
+    <h2><a href="/posts/review-stochastic-cost-estimation-monte-carlo">Review of &#39;Stochastic Cost Estimation and Risk Analysis in Managing Software Projects&#39; paper</a></h2>
+    
+    <h2><a href="/posts/uncertainty-as-risk-in-software-project">Risk means Uncertainty in Financial Engineering, so does in Software Projects</a></h2>
+    
+    <h2><a href="/posts/financial-engineering-in-software-projects">Financial Engineering of Software Projects</a></h2>
+    
+    <h2><a href="/posts/about">About Richard Imaoka</a></h2>
+    
+
+  </div><!--/.archieve-->
+
+</aside>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+  <script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.prettyPhoto.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/wow.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72224382-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
