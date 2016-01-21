@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantitative Software Engineering by Richard Imaoka</title>
+    <link>http://richard-imaoka.github.io</link>
+    <description>Quantitative Software Engineering info website created by Richard Imaoka, a professional programmer and an ameteura Quant. </description>
+    <atom:link href="http://richard-imaoka.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pricing and Accounting Software - Income</title>
+      <description><![CDATA[
+<figure style="text-align:center">
+  <img src="/images/posts/income.png">
+</figure>
+
+<h2>Income from software - illustrated by the single-app E-Commerce company</h2>
+<p>
+  Like my previous articles, let's continue the discussion about the same single-app E-commerce company, to make the argument simple.
+  <figure style="text-align:center">
+    <img src="/images/posts/income-e-sales.png">
+  </figure>
+</p>
+
+<p>
+  What kind of income does the "e-Sales" software generate? It is only the revenue from the "e-Sales" application.
+  No other income, like license fee, is generated from "e-Sales".
+</p>
+
+<p>
+  Then, it would feel natural and easy to associate all the revenue to "e-Sales". However...
+  <figure style="text-align:center">
+    <img src="/images/posts/income-revenue.jpg" style="max-width:100%; height:auto">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/business-graph-with-dollar-sign-photo-p391087">Image by dream designs at FreeDigitalPhotos.net</a></figcaption>
+  </figure></p>
+</p>
+
+
+
+<h2>Revenue is generated from the whole "business", not only from the software</h2>
+<p>
+  It is not really right to associate 100% of the revenue to the software. Because there are other contribution factors.
+</p>
+
+<p>
+  For example, if we are talking about financial assets like coupon bonds, it is very clear coupon income is purely generated from the bond.
+</p>
+
+<figure style="text-align:center">
+  <img src="/images/posts/income-bond.png" style="max-width:100%; height:auto">
+</figure></p>
+
+<p>
+  However, for software, you need hardware running the software application, people supporting the software, etc.
+  In  other words, the entire <strong>"business"</strong> including the software generates the "e-Sales" revenue, not the software only.
+</p>
+
+<figure style="text-align:center">
+  <img src="/images/posts/income-software.png" style="max-width:100%; height:auto">
+</figure></p>
+
+<p>
+  Then is it just meaningless to think about "how much revenue does the software generate"?
+  Well, it is still very important, especially when you think about <strong>change</strong> in revenue, created from software enhancement, replacement, retirement.
+  Or even if running legacy software application without any change, you might see change in the revenue.
+</p>
+
+<p>
+  We'll explore more about revenue change and software relationship in future articles.
+</p>
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
+    </item>
+    
+    
+    <item>
+      <title>Pricing and Accounting Software - Expenses, Time-Tracking with RescueTime</title>
+      <description><![CDATA[<h2>RescueTime tracks your time usage by application, and web site</h2>
+
+<p>
+  <a href="https://www.rescuetime.com/">RescueTime</a> is a cloud-based application,
+  which tracks your time usage. From its website, it works as follows:
+
+  <blockquote>
+    <ul>
+      <li>Runs securely in the background on your computer and mobile devices.</li>
+      <li>Tracks time spent on applications and websites, giving you an accurate picture of your day.</li>
+      <li>Gives you detailed reports and data based on your activity.</li>
+    </ul>
+  </blockquote>
+
+  So, the detailed report looks like this.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/rescuetime-3.png">
+  </figure>
+
+</p>
+
+<p>
+  To track the time usage, RescueTime desktop process automatically starts when you start your PC.
+  Then, when you move "focus" to (mouse click on) any application, then it tracks the time spent on the application,
+  until you move focus to another application.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/rescuetime-1.png">
+  </figure>
+
+  For web browsers, RescueTime can give more detailed tracking, by each web page.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/rescuetime-2.png">
+  </figure>
+
+  The collected time usage data is sent to RescueTime's cloud, and aggregated to show the report like shown at the top of this article.
+</p>
+
+<h2>RescueTime is very useful, but analysis from different aspects needed</h2>
+<p>
+  RescueTime, as it is not intended for software maintenance cost calculation (so it's not a complaint for RescueTime at all), there are challenges.
+</p>
+
+<p>
+  For example, if you use Text Editor to write code for your application, maybe "e-Sales", the time is recorded for Text Editor.
+
+  However, in such a case, you actually want the time recorded for e-Sales, not Text Editor.
+
+  (i.e.) RescueTime keeps track of applications you <strong>use</strong>, but you want to keep track of applications you <strong>support.</strong>
+</p>
+
+<p>
+  To more accurately calculate your software's maintenance cost,
+  you would also other differnet kinds of software metrics and develop your own cost calculation models based on various metrics.
+
+  We'll explore the possibilities of leveraging such metrics in later blog posts.
+</p>
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
+    </item>
+    
+    
+    <item>
+      <title>Pricing and Accounting Software - Expenses, Time-Tracking for Maintenance Cost Calculation</title>
+      <description><![CDATA[<h2>Expenses is mainly maintenance cost of your software</h2>
+<p>
+  As previously discussed in earlier posts, I split software into the four components as below.
+  In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense.png">
+  </figure>
+</p>
+
+<h2>Example: Single-Application E-commerce company</h2>
+<p>
+  In the real world, calculating software maintenance cost is pretty complicated.
+
+  A lot of people with different roles might use the same software, including developers, DevOps people, designers, etc.
+  Also there could be hardware and electricity costs associated the software.
+</p>
+
+<p>
+  To avoid complexity, I use a very simple setup here to illustrate how it works.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale1.png">
+  </figure>
+
+  Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
+  And then let's also assume there are 3 developers supporting the e-Sales software. They maintain and enhance the e-Sales.
+</p>
+
+<p>
+  If we could somehow measure the percentage of their time usage, and time usage by each developer can be like this.
+  For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale2.png">
+  </figure>
+</p>
+
+<p>
+  What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale3.png">
+  </figure>
+</p>
+
+<p style="text-align: center; font-size: 14px;">
+  $3,800 x 30% + $3,500 x 50% + $4,000 x 45% <br>
+  = $4,690 / Month
+</p>
+
+<p>
+  Good, with this simple formula, and (a lof of) assumptions, we could show the monthly maintenance cost of the e-Sales software.
+</p>
+
+<h2>Tracking time usage is possible?</h2>
+<p>
+  Again, in real-life situations, it doesn't go like this simple.
+
+  <ul>
+    <li>More than a single team of people might be supporting e-Sales</li>
+    <li>Joe, Katie and Alice might be supporting other applications than e-Sales</li>
+    <li>Most problematic issue is - <strong>time usage analysis is pretty difficult</strong></li>
+  </ul>
+
+</p>
+
+<p>
+  So is it just impossible to calculate software maintenance cost? I think the answer is that, it is impossible to give 100% accurate analytics, however,
+  the advance of current technologies like <a href="https://www.rescuetime.com/">Rescue Time</a> enabled, or at least would enable in near future, to keep track of time usage in an acceptable accuracy.
+
+  <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
+</p>
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
+    </item>
+    
+    
+    <item>
+      <title>Pricing and Accounting Software - Expenses</title>
+      <description><![CDATA[<h2>Expenses is mainly maintenance cost of your software</h2>
+<p>
+  As previously discussed in earlier posts, I split software into the four components as below.
+  In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense.png">
+  </figure>
+</p>
+
+<h2>Example: Single-Application E-commerce company</h2>
+<p>
+  In the real world, calculating software maintenance cost is pretty complicated.
+
+  A lot of people with different roles might use the same software, including developers, DevOps people, designers, etc.
+  Also there could be hardware and electricity costs associated the software.
+</p>
+
+<p>
+  To avoid complexity, I use a very simple setup here to illustrate how it works.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale1.png">
+  </figure>
+
+  Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
+  And then let's also assume there are 3 developers supporting the e-Sales software. They maintain and enhance the e-Sales.
+</p>
+
+<p>
+  If we could somehow measure the percentage of their time usage, and time usage by each developer can be like this.
+  For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale2.png">
+  </figure>
+</p>
+
+<p>
+  What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale3.png">
+  </figure>
+</p>
+
+<p style="text-align: center; font-size: 14px;">
+  $3,800 x 30% + $3,500 x 50% + $4,000 x 45% <br>
+  = $4,690 / Month
+</p>
+
+<p>
+  Good, with this simple formula, and (a lof of) assumptions, we could show the monthly maintenance cost of the e-Sales software.
+</p>
+
+<h2>Tracking time usage is possible?</h2>
+<p>
+  Again, in real-life situations, it doesn't go like this simple.
+
+  <ul>
+    <li>More than a single team of people might be supporting e-Sales</li>
+    <li>Joe, Katie and Alice might be supporting other applications than e-Sales</li>
+    <li>Most problematic issue is - <strong>time usage analysis is pretty difficult</strong></li>
+  </ul>
+
+</p>
+
+<p>
+  So is it just impossible to calculate software maintenance cost? I think the answer is that, it is impossible to give 100% accurate analytics, however,
+  the advance of current technologies like <a href="https://www.rescuetime.com/">Rescue Time</a> enabled, or at least would enable in near future, to keep track of time usage in an acceptable accuracy.
+
+  <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
+</p>
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
+    </item>
+    
+    
+    <item>
+      <title>Refactoring Software is Explained in Financial Accounting Context</title>
+      <description><![CDATA[<p>
+  The previous post, <a href="enhancement-and-technical-debt">Software Enhancement is Explained in Financial Accounting Context</a>,
+  showed how software enhancement can be explained from a Financial Accounting perspective.
+</p>
+
+<h2>Good refactoring only reduces Technical Debt</h2>
+<p>
+  Refactoring is an activity to clean up your code, and make it easier to maintain.
+  As <a href="http://martinfowler.com/books/refactoring.html">Martin Fowler said</a>,
+  it is to preserve the original behavior of the software, but still make it better designed.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/refactoring1.png">
+  </figure>
+
+  So, essentially the Technical Debt will be reduced without having to reduce software's value.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/refactoring2.png" style="max-width:100%; height:auto;;">
+  </figure>
+
+  As the Technical Debt was decreased, the software becomes easier to maintain, less error prone, and the mainteance cost will be saved.
+</p>
+
+<h2>Bad refactoring actually increases Technical Debt</h2>
+<p>
+  So far a happy scenario, but what happens when you do bad refactoring?
+
+  For example, you introduced unexpected bugs, or you chose wrong design or implementation so that it actually becomes difficult to maintain and change the code going forward.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/refactoring3.png">
+  </figure>
+
+  In such a case, total Technical Debt of the software is increased,
+
+  <figure style="text-align:center">
+    <img src="/images/posts/refactoring4.png">
+  </figure>
+
+  And thus the maintenance cost is also increased. It is analogous to increase in Financial Debt causing increase in debt charge too.
+  You will see loss from this refactoring activity.
+</p>
+
+<h2>Bad Refactoring should be reverted immediately</h2>
+<p>
+  So, what to do, when you did bad refactoring? You revert it back!
+
+  Unfortunately, in practice, it is sometimes found that previous refactoring had unexpected bad impact, and you need to revert the refactoring.
+</p>
+
+<p>
+  The best practice in refactoring is to do it in very small steps. If you do large scale refactoring, and the problems are realized later, it gets much harder to revert to the original state.
+
+  So, if you cannot revert the refactoring, your software will operate in an inferior quality - more maintenance cost than before.
+
+</p>
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
+    </item>
+    
+    
+    <item>
+      <title>Software Enhancement is Explained in Financial Accounting Context</title>
+      <description><![CDATA[<h2>Review of Software and Technical Debt in Financial Accounting</h2>
+
+<p>
+  The previous post, <a href="technical-debt-from-a-single-line">Single Line of Source Code is still Technical Debt</a>"
+  explained how to treat software and technical debt in terms of Financial Accounting.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting5.1.png">
+  </figure>
+
+  In this article, let me try explaining how enhancement (e.g. adding a new feature to software) affects this balance.
+</p>
+
+<h2>Good Enhancement gives you more benefit than increased maintenance cost</h2>
+<p>
+  Software enhancement is made for benefits, but that's only one side of the story.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting8.png">
+  </figure>
+
+  When making an enhancement, you are most likely adding new lines of code. And as in the previous post, any single line of code is Technical Debt.
+
+  Thus, you cannot avoid <strong>increased Technical Debt</strong> and resulting <strong>maintenance cost increase.</strong>
+</p>
+
+<p>
+  It is similar, in a Financial Debt context, to a situation where you borrow more money, and the increased debt amount result in an increased debt charge to pay.
+</p>
+
+<p>
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting9.png">
+  </figure>
+
+  However, making enhancement also increases the value of your software, as it performs better or supports more features.
+  So, as long as you see more benefit than maintenance cost, the enhancement is good one.
+</p>
+
+<h2>Bad Enhancement increased maintenance cost more than its benefit</h2>
+<p>
+  On the other hand, if you do a bad enhancement, you will increase the Technical Debt a lot more. Typically you add buggy code and that causes a lot of troubles afterwards.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting10.png">
+  </figure>
+
+  In such a case, you need to pay more maintenance cost and the benefit from the enhancement is diminished.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting11.png">
+  </figure>
+</p>
+
+<h2>Cost vs. Benefit analysis is crucial for enhancement</h2>
+<p>
+  In environments where users are very close to the development team, the development team tends to respond to the users quickly for their enhancement requests.
+
+  The users are happy, and the development team gets credits, however, they are only looking at one side of the enhancement - increased benefit.
+</p>
+
+<p>
+  As illustrated above, you always add more technical debt when making an enhancement. So developers (or in certain cases, product managers) need to be very serious about
+  the requested feature really gives benefits they want to provide.
+</p>
+
+<p>
+  Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
+</p>]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
+    </item>
+    
+    
+    <item>
+      <title>Single Line of Source Code is still Technical Debt</title>
+      <description><![CDATA[<h2>Accounting of Financial Debt</h2>
+
+<p>
+  Disclaimer - the pictures used in this post are not as strict and accurate as the U.S. and most other countries' accounting standars require, but still serve as illustration of basic concepts.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting1.png">
+    <figcaption>Figure 1. Asset (Cash) and Liability (Debt) are balanced</figcaption>
+  </figure>
+
+  Firstly, when you borrow, (e.g.) $1,000 from someone, you get $1,000 cash on the asset side, and $1,000 on the debt side in your accounting.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting2.png">
+    <figcaption>Figure 1. You pay back $100 of the debt</figcaption>
+  </figure>
+
+  Afterwards, you pay back part of the debt, $100.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting3.png">
+    <figcaption>Figure 3. Charge for the debt</figcaption>
+  </figure>
+
+  However, you don't pay back only $100, because you need to pay the charge of the debt. So, if the charge is $50, you lose this $50.
+
+  Of course, if you borrow $1,000, you don't just save it in your account. You borrowed the money to invest in something else, hopefully earning more than the charge of the debt.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting4.png">
+    <figcaption>Figure 4. You borrowed cash for investment</figcaption>
+  </figure>
+
+  Talking about debt in accounting, and finance, there is one important thing to note -
+
+</p>
+
+<h2>Debt itself is not a bad thing, nor is it good</h2>
+
+<p>
+  Usually people are afraid of debt, and believe that:
+
+  <ul>
+    <li>No debt is ideal, keep it minimal</li>
+    <li>You should pay back debt as early as possible</li>
+  </ul>
+
+  <strong>This is wrong mindset.</strong> why?
+
+  As in this article, debt allows you increase your asset, which you can invest in something else.
+
+  If you always need to "buy" your assets, you need to wait until your profit piles up to make the investment.
+  That will significantly slow down your business.
+
+<p>
+  Of course, more debt means more charge to pay, but if you also have enough income to cover the charge, that is ok.
+  So, don't blindly assume debt is bad, but the bad thing is <strong>broken balance </strong> between the charge from Debt, and your income.
+</p>
+
+
+<h2>Accounting of Software, from the debt metaphor</h2>
+
+<p>
+  You can look at <a href="http://c2.com/cgi/wiki?WardExplainsDebtMetaphor">"Ward (Cunningham) Explains Debt Metaphor"</a> to see why and how software is referred as debt.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting5.png">
+    <figcaption>Figure 5. As long as you have software, there is always Technical Debt</figcaption>
+  </figure>
+
+  Like in Finance, you pile up Technical Debt to create or purchase software asset.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting6.png" style="max-width:100%; height:autox;">
+    <figcaption>Figure 6. Technical Debt causes maintenance cost</figcaption>
+  </figure>
+
+  Technical debt causes cost in maintenance. as financial debt causes debt charge. One interesting thing about Technical Debt is you might end up only paying maintenance cost, without paying back the debt.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting7.png">
+    <figcaption>Figure 7. Software generates benefit, that is why it can be accounted as an asset</figcaption>
+  </figure>
+
+  Also, software can be accounted as an asset, as that is expected to give you certain benefits. Benefits range from driving revenue (e.g. if your software is running your e-commerce site) or reducing cost by automating human tasks.
+
+</p>
+
+<h2>Technical Debt is not bad itself - single line of code is still Technical Debt</h2>
+<p>
+  When talking about this "Technical Debt" metaphor, people usually think Technical Debt = Bad Code/ Software, but drives you into a <strong>wrong mindset</strong>.
+</p>
+
+<p>
+  Any <strong>single line of code</strong> is Technical Debt, rather than just bad code.
+</p>
+
+<p>
+  If you treat only bad code as Technical Debt, you tend to think it's something you need to pay back ASAP. That can hurt your business - as long as your Technical Debt is well balanced (i.e.) software's benefit covers its maintenance cost well, you don't need to pay back the Technical Debt.
+</p>
+  Like financial debt, Technical Debt is not a bad thing as long as it is <strong>well balanced</strong> against the benefits the software gives you.
+</p>
+
+<p>
+  So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
+</p>]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
+    </item>
+    
+    
+    <item>
+      <title>Review of 'Stochastic Cost Estimation and Risk Analysis in Managing Software Projects' paper</title>
+      <description><![CDATA[<p style="text-align: center">
+  <a href="http://aut.researchgateway.ac.nz/handle/10292/1591">"Stochastic cost estimation and risk analysis in managing software projects"</a>
+</p>
+
+<p>You can dowload the paper from the above link.</p>
+
+<h2>Monte Carlo Simulation in Finance</h2>
+
+<p>
+  Monte Carlo is a typical simulation technique for a random process,
+  In Financial Engineering, it is commonly used to calculate the price of an asset, especially complicated derivative assets.
+</p>
+
+<p>
+  Very briefly, it works as:
+  <ul>
+    <li>You model a random price movement of an asset (model means a Mathematical equation to describe the movement)</li>
+    <li>Run a simulation and then you see  a random price movement path</li>
+    <li>Repeat the simulation multiple times (1,000, 10,000, or 100,000 ... dependent on the problem)</li>
+    <li>See the resulting probability distribution, and take the average</li>
+  </ul>
+</p>
+
+<figure style="text-align:center">
+  <a title="By Sc1171 (Own work) [CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AMonte_carlo_simulation.png">
+    <img style="max-width: 512px; width: 100%;" alt="Monte carlo simulation" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Monte_carlo_simulation.png"/>
+  </a>
+  <figcaption>By Sc1171 (Own work) [(<a href="http://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)], via Wikimedia Commons</figcaption>
+</figure>
+
+<p>
+  Using Monte Carlo for a simple model like stock price doesn't make much sense, but <strong>Monte Carlo</strong> is a powerful tool for <strong>pricing complicated derivative</strong> assets,
+  where the pricing model is too complicated to derive an answer (i.e. the price) mathematically.
+  If you cannot solve the price mathematically, then Monte Carlo allows you to still price the derivative asset with a large number of simulations.
+</p>
+
+<h2>Monte Carlo in Software Engineering</h2>
+
+<p>So, how this paper used the Monte Carlo technique to estimate the software project risk? Firstly, it split a software project into multiple phases</p>
+
+<p>
+  <ul>
+    <li><strong>Planning and Bid Preparation</strong></li>
+    <li><strong>Requirements Definition</strong></li>
+    <li><strong>Analysis and Design</strong></li>
+    <li><strong>Code and Debug</strong></li>
+    <li><strong>Integrate and Test</strong></li>
+    <li><strong>Deployment and Acceptance</strong></li>
+  </ul>
+</p>
+
+<p>
+  Each phase of this is modeled as a random process (i.e.) it has a range of possible completion dates.
+  And each phase is modeled as a different a different random (e.g. different standard deviation, etc).
+</p>
+
+<p>The below is a figure from the paper, showing the results of 5,000 Monte Carlo simulations of the entire project.</p>
+
+<figure style="text-align:center">
+  <img src="/images/posts/monte-carlo.png">
+</figure>
+
+<h2>What are the benefits, and challenges?</h2>
+
+<h3>Benefits</h3>
+
+<p>The paper provided a basic, but a powerful and standard framework to see how the possible project completion date distribution would look like. It is very similar to derivative pricing with Monte Carlo in Finance.</p>
+
+<p>Over time, you can tweak the model for each project phase, comparing the simulation with past-completed projects, and the models would be expected to be more accurate.</p>
+
+<h3>Challenges</h3>
+
+<p>There could be problems though, since it weighs historical data to predict the possible future project completion. If new technologies are introduced and they completely change the game, which is typical, historical projects do not predict future projects well.</p>
+
+<p>Also this paper is based on Water-fall like project style. Maybe Agile projects need a bit different modeling.</p>
+
+<p>However, this is still an informative paper providing probabilistic view on software project management.</p>
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
+    </item>
+    
+    
+    <item>
+      <title>Risk means Uncertainty in Financial Engineering, so does in Software Projects</title>
+      <description><![CDATA[<h2>You can never tell when your Software Project will be finished</h2>
+
+<figure style="text-align:center">
+  <img src="/images/posts/ID-10098216.jpg">
+  <figcaption><a href="http://www.freedigitalphotos.net/images/Ideas_and_decision_m_g409-Figure_With_Red_Question_Mark_p98216.html">Image by Master isolated images at FreeDigitalPhotos.net</a></figcaption>
+</figure>
+
+<p>The below looks very <strong>obvious</strong>, and maybe even stupid, but it's the <strong>first step</strong> to understand what "risk" means in software projects.</p>
+
+<p>Typically in a software  project, toward the end of the project, requirements get clearer, people get detailed ideas about implementation, and there are less tasks to do. So, of course, it gets easier to predict when the project is completed, as the project gets closer to completion.</p>
+
+<p>In contrast, predicting the project completion is hard at the beginning. Unexpected issues arise as the project goes on</p>
+
+<p>Sounds too obvious? But that yields into the following definition...</p>
+
+<h2>High risk project, as highly uncertain completion date, not a long project</h2>
+
+<p>Even though two projects can have the same planned completion date, one might have more predictable completion than the other.</p>
+
+<p>For example, you may be using legacy and well-known technologies in one of the projects, and you can give more accurate estimate on project's completion. The other project might involve newer technologies you are not familiar with. In such a case, the former project has less risk. The latter has more risk.</p>
+
+<figure style="text-align:center">
+  <img src="/images/posts/risk.png">
+</figure>
+
+<p>So, a riskier project <strong>doesn't necessarily</strong> mean a longer project. If project's completion is <strong>less predictable</strong>, the project is <strong>riskier</strong>.</p>
+
+<p>Of course, generally as a project gets longer and larger, its completion date is more difficult to predict though.</p>
+
+<h2>Risk in Financial Engineering is not a bad thing</h2>
+
+<p>I chose the above definition of software project's risk, to match the meaning of risk in Financial Engineering.</p>
+
+<p>In Financial Engineering, a <strong>risk is not a bad thing</strong>. Actually, it doesn't mean anything good or bad. It's just uncertainty about the price of an asset.</p>
+
+<p>For example, you don't know Facebook's stock price tomorrow. So that means Facebook's stock price has a risk. (i.e.) uncertainty.</p>
+
+<p>If Facebook's stock never ever changes its value, you have no risk but you cannot get any return from investing in Facebook.</p>
+
+<p>So, if you want a return from your investment, in other words, if you <strong>expect upside</strong>, you need to <strong>accept potential downside</strong> as the price of Facebook goes up or down, either way.</p>
+
+<p>That's why I said a risk is not bad - whenever you expect return from investment, there is a risk.</p>
+
+<h2>Importance of risk management in software projects</h2>
+
+<p>Financial Engineering admits you can never accurately predict any asset's price in the future, but still it allows you <strong>manage risks</strong>.</p>
+
+<p>The key to manage risks is <strong>quantifying</strong> them, describing them in mathematical forms. Mathematics don't need to be complicated, but need to be simple and robust enough.</p>
+
+<p>Like in Financial Engineering, if you expect return from projects, you need to accept risks. The converse is also true. If you take a risk, you must be expecting a return (otherwise, what's the reason of you taking the risk!?) </p>
+
+<p>I'll describe how the Financial Engineering frameworks can be applied in the field of software project management, in other articles in this series..</p>
+
+
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
+    </item>
+    
+    
+    <item>
+      <title>Financial Engineering of Software Projects</title>
+      <description><![CDATA[<p>Yet there is a question the software industry has not provided right ways to answer...</p>
+
+<h2>Do you want to invest in this software project?</h2>
+
+<div style="text-align:center">
+  <figure>
+    <img src="/images/posts/ID-10056727.jpg">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</div>
+
+<p>This is still a very subjective question. People usually depend on experienced programmers or project managers to give estimate on how long a project takes, and it often turns out to be <strong>wrong</strong>.</p>
+
+<p>In a series of blog articles, I am going to build <strong>scientific</strong> and <strong>quantitative</strong> methodologies to answer to the above question, leveraging frameworks developed in financial engineering.</p>
+
+<h2>The software industry has focused on <strong>"how"</strong> to build software better</h2>
+
+<p>
+  There has been an uncountable number of software development methodologies people have come up with, and tried.
+  ( You can see some of these in <a href="https://en.wikipedia.org/wiki/Software_development_process">"Software development process" in Wikipedia</a> ).
+</p>
+
+<p>
+  Project management styles like:
+
+  <ul>
+      <li>Waterfall method</li>
+      <li>Agile methodologies</li>
+  </ul>
+
+  Programming styles as:
+
+  <ul>
+    <li>Object Oriented Programming</li>
+    <li>Functional Programming</li>
+  </ul>
+
+  or testing styles like:
+
+  <ul>
+    <li>Test Driven Development</li>
+    <li>Behavior Driven Development</li>
+  </ul>
+
+  Also application architectures:
+
+  <ul>
+    <li>Monolithic architecture</li>
+    <li>Micro Services</li>
+  </ul>
+
+  There is a lot more different methodologies in many different aspects of software development.
+</p>
+
+<p>
+  Lessons, best practices were learnt and shared within the industry, and nowadays people use very sophisticated ways in developing their software, however...
+</p>
+
+<h2><strong>"Whether"</strong> to invest in a software project ... ?</h2>
+
+<p>We don't know the answer to the question yet.</p>
+
+<p>Yes, it's still crucial to be familiar with software development methodologies and technologies like above, for a successful project.</p>
+
+<p>However, no matter how good you are as a programmer, or as a project manager, still software development takes longer than people would usually expect, and stakeholders are upset by delay or even failure of project delivery.</p>
+
+<p>
+  So you want to know... :
+  <ul style="color: #ff0000; font-size: 1.5em;">
+    <li><strong>How long does the project take?</strong></li>
+    <li><strong>How much cost does it incur?</strong></li>
+  </ul>
+  but how can we tell?
+</p>
+
+<h2>Uncertainty, which financial engineering has dealt with in its long history</h2>
+
+<div style="text-align:center">
+  <figure>
+    <img src="/images/posts/questions.jpg">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/question-mark-on-cubes-shows-uncertainty-photo-p175169">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</div>
+
+<p>We  need to admit it is <strong>impossible</strong> to know exactly when a project is finished, at the beginning.</p>
+
+<p>You are deliberately facing <strong>uncertainty</strong> in project planning, since software development is doing something new in most cases.</p>
+
+<p>
+  So,
+  <ul>
+    <li>Don't rely on, or keep relying on a single number which you estimated at the beginning</li>
+    <li>Rather, think in a "range" of possible outcomes (e.g. project delivery date) given uncertainty</li>
+  </ul>
+  Illustration of this concept is as follows:
+</p>
+
+<div style="text-align:center">
+  <figure>
+    <img src="/images/posts/uncertainty.png">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</div>
+
+<p>
+  Financial engineering frameworks have a long history of dealing with uncertainty, and provided ways to still make decisions even though you cannot accurately estimate the outcome.
+  Let's enter in the frameworks and in the field from the next article in the series.
+</p>
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
+    </item>
+    
+    
+    <item>
+      <title>About Richard Imaoka</title>
+      <description><![CDATA[<p>
+  Richard Imaoka is a professional programmer living in far east Asia, and also an amateur quant.
+</p>
+
+
+]]></description>
+      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/about</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
+    </item>
+    
+  </channel>
+</rss>

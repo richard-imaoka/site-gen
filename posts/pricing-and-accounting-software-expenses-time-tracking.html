@@ -3,7 +3,7 @@
   <head lang="en">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="'Technical Debt' is a known metaphor in Software Engineering. We already explained how enhancement can be explained in the Financial Accounting context, so how it works for refactoring?">
+<meta name="description" content="In the previous article, we demonstrated that if we know the time usage of each person, we can calculate the maintenance cost of software. Let's explore a method to track time usage here.">
 <meta name="author" content="">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -58,76 +58,81 @@
             <div class="blog-item">
               <div class="row">
                 <div class="col-xs-12 col-sm-12 blog-content">
-                  <h1>Refactoring Software is Explained in Financial Accounting Context</h1>
-                  <p>'Technical Debt' is a known metaphor in Software Engineering. We already explained how enhancement can be explained in the Financial Accounting context, so how it works for refactoring?</p>
-                  <p>
-  The previous post, <a href="enhancement-and-technical-debt">Software Enhancement is Explained in Financial Accounting Context</a>,
-  showed how software enhancement can be explained from a Financial Accounting perspective.
+                  <h1>Pricing and Accounting Software - Expenses, Time-Tracking for Maintenance Cost Calculation</h1>
+                  <p>In the previous article, we demonstrated that if we know the time usage of each person, we can calculate the maintenance cost of software. Let's explore a method to track time usage here.</p>
+                  <h2>Expenses is mainly maintenance cost of your software</h2>
+<p>
+  As previously discussed in earlier posts, I split software into the four components as below.
+  In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense.png">
+  </figure>
 </p>
 
-<h2>Good refactoring only reduces Technical Debt</h2>
+<h2>Example: Single-Application E-commerce company</h2>
 <p>
-  Refactoring is an activity to clean up your code, and make it easier to maintain.
-  As <a href="http://martinfowler.com/books/refactoring.html">Martin Fowler said</a>,
-  it is to preserve the original behavior of the software, but still make it better designed.
+  In the real world, calculating software maintenance cost is pretty complicated.
 
-  <figure style="text-align:center">
-    <img src="/images/posts/refactoring1.png">
-  </figure>
-
-  So, essentially the Technical Debt will be reduced without having to reduce software's value.
-
-  <figure style="text-align:center">
-    <img src="/images/posts/refactoring2.png" style="max-width:100%; height:auto;">
-  </figure>
-
-  As the Technical Debt was decreased, the software becomes easier to maintain, less error prone, and the mainteance cost will be saved.
-</p>
-
-<h2>Bad refactoring actually increases Technical Debt</h2>
-<p>
-  So far a happy scenario, but what happens when you do bad refactoring?
-
-  For example, you introduced unexpected bugs, or you chose wrong design or implementation so that it actually becomes difficult to maintain and change the code going forward.
-
-  <figure style="text-align:center">
-    <img src="/images/posts/refactoring3.png">
-  </figure>
-
-  In such a case, total Technical Debt of the software is increased,
-
-  <figure style="text-align:center">
-    <img src="/images/posts/refactoring4.png">
-  </figure>
-
-  And thus the maintenance cost is also increased. It is analogous to increase in Financial Debt causing increase in debt charge too.
-  You will see loss from this refactoring activity.
-</p>
-
-<h2>Bad Refactoring should be reverted immediately</h2>
-<p>
-  So, what to do, when you did bad refactoring? You revert it back!
-
-  Unfortunately, in practice, it is sometimes found that previous refactoring had unexpected bad impact, and you need to revert the refactoring.
+  A lot of people with different roles might use the same software, including developers, DevOps people, designers, etc.
+  Also there could be hardware and electricity costs associated the software.
 </p>
 
 <p>
-  The best practice in refactoring is to do it in very small steps. If you do large scale refactoring, and the problems are realized later, it gets much harder to revert to the original state.
+  To avoid complexity, I use a very simple setup here to illustrate how it works.
 
-  So, if you cannot revert the refactoring, your software will operate in an inferior quality - more maintenance cost than before.
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale1.png">
+  </figure>
+
+  Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
+  And then let's also assume there are 3 developers supporting the e-Sales software. They maintain and enhance the e-Sales.
+</p>
+
+<p>
+  If we could somehow measure the percentage of their time usage, and time usage by each developer can be like this.
+  For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale2.png">
+  </figure>
+</p>
+
+<p>
+  What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-expense-esale3.png">
+  </figure>
+</p>
+
+<p style="text-align: center; font-size: 14px">
+  $3,800 x 30% + $3,500 x 50% + $4,000 x 45% <br>
+  = $4,690 / Month
+</p>
+
+<p>
+  Good, with this simple formula, and (a lof of) assumptions, we could show the monthly maintenance cost of the e-Sales software.
+</p>
+
+<h2>Tracking time usage is possible?</h2>
+<p>
+  Again, in real-life situations, it doesn't go like this simple.
+
+  <ul>
+    <li>More than a single team of people might be supporting e-Sales</li>
+    <li>Joe, Katie and Alice might be supporting other applications than e-Sales</li>
+    <li>Most problematic issue is - <strong>time usage analysis is pretty difficult</strong></li>
+  </ul>
 
 </p>
-                  
-                  <div>
-                    <h2>References</h2>
-                    <div class="references">
-                      <ol>
-                        
-                        <li>Martin Fowler, <a href="http://martinfowler.com/books/refactoring.html"><strong>"Refactoring Improving the Design of Existing Code"</strong></a>, Martin Flower.com</li>
-                        
-                      </ol>
-                    </div>
-                  </div>
+
+<p>
+  So is it just impossible to calculate software maintenance cost? I think the answer is that, it is impossible to give 100% accurate analytics, however,
+  the advance of current technologies like <a href="https://www.rescuetime.com/">Rescue Time</a> enabled, or at least would enable in near future, to keep track of time usage in an acceptable accuracy.
+
+  <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
+</p>
                   
                 </div>
               </div>
