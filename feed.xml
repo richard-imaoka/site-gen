@@ -8,6 +8,148 @@
     
     
     <item>
+      <title>Pricing and Accounting Software - Debt</title>
+      <description><![CDATA[<h2>Why the metaphor Technical "Debt" is used? Because it causes maintenance costs</h2>
+<p>
+  Let's review why people call software as Technical Debt.
+  There is an excellent summary article, "<a href="https://medium.com/@kellan/towards-an-understanding-of-technical-debt-ae0f97cc0553#.pn7e7x4p5">Towards an understanding of technical debt</a>", which puts Technical Debt into 5 different categories:
+
+  <ol>
+    <li>Maintenance work</li>
+    <li>Features of the codebase that resist change</li>
+    <li>Operability choices that resist change</li>
+    <li>Code choices that suck the will to live</li>
+    <li>Dependencies that resist upgrading</li>
+  </ol>
+
+  Eventually, as software causes cost as such, people call it Technical Debt, something you have to <strong>pay for</strong>.
+
+</p>
+
+<h2>Financial Debt, you have to pay it back</h2>
+<p>
+  Speaking of Financial Debt, typically you have periodic payments to pay back the debt you are obligated.
+  And as the time goes by, the debt amount decreases.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-debt-financial-debt.png">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">Image by sheelamohan at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</p>
+
+<p>
+  Also another important property is that usually it is straightforward to derive the periodic payment amount,
+  from the debt amount for Financial Debt.
+  <figure style="text-align:center">
+    <img src="/images/posts/income-bond.png">
+  </figure>
+</p>
+
+
+<h2>Technical Debt does not require you to pay it back</h2>
+<p>
+  On the other hand, Technical Debt doesn't hold the properties as discussed above for usual Financial Debt.
+  As Ward Cunningham writes in "<a href="http://c2.com/cgi/wiki?WardExplainsDebtMetaphor">Ward Explains Debt Metaphor</a>",
+  you don't need to pay back Technical Debt.
+
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-debt-technical-debt.png">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Worried_Businessman_With_Pc_p67341.html">Image by David Castillo Dominici at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+
+  If you don't pay back (i.e. clean up) Technical Debt, you need to keep paying continuous and consistent maintenance cost over time.
+
+</p>
+
+<h2>We need mathematical models to tie Technical Debt and Software maintenance cost</h2>
+<p>
+  Also another important property about Technical Debt is it is not straightforward to relate the mainteance cost amount and the Technical Debt amount.
+  For example, if you incrase the number of lines if your software source code, chances are that your maintenance cost might more than double or even triple as a result.
+</p>
+
+<p>
+  With the advance of today's technologies, it is becoming easier to collect and calculate software metrics, for Technical Debt.
+  For example, simply the number of lines in your code, cyclomatic complexity, frequency of issues from a certain portion of the code, etc.
+</p>
+
+<p>
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-debt-technical-debt-model.png">
+    <figcaption>
+      Images by
+      <a href="http://www.freedigitalphotos.net/images/Education_g314-Mathematical_Background_p86649.html">Janaka Dharmasena</a>
+      and
+      <a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">sheelamohana</a>
+      at FreeDigitalPhotos.net
+    </figcaption>
+  </figure>
+
+  Then you need <strong>mathematical models</strong> to relate the software metrics to the maintenance cost.
+  Just showing software metrics will not get you anywhere. You need to carefully review the metrics and use them to effectively manage your software maintenance cost.
+</p>
+
+</figure>
+]]></description>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</guid>
+    </item>
+    
+    
+    <item>
+      <title>Pricing and Accounting Software - Asset</title>
+      <description><![CDATA[<h2>Accounting package software is easy as you know the price</h2>
+
+<p>
+  When you purchased a packaged software product, it is easy to tell the asset value of the software.
+  That is just the purchase price (and if necessary, you apply <a hre="https://en.wikipedia.org/wiki/Depreciation">"depreciation"</a> accounting).
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-asset-package.png">
+  </figure>
+</p>
+
+<h2>Accounting internally developed software ... how to price it?</h2>
+<p>
+  On the other hand, it becomes difficult when you try to evaluate the software you developed internally in your company.
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-asset-internal.png">
+    <figcaption><a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">Image by renjith krishnan at FreeDigitalPhotos.net</a></figcaption>
+  </figure>
+</p>
+
+<p>
+  One possible approach is to calculate <a href="http://www.investopedia.com/terms/d/dcf.asp">"Discounted Cash Flow"</a> which is generated from your software.
+  In this case, the cashflow is the revenue generated from the software.
+  <figure style="text-align:center">
+    <img src="/images/posts/accounting-asset-cashflow.png">
+  </figure>
+</p>
+
+<p>
+  However, that is not almost always impossible. As we saw in the <a href="pricing-and-accounting-software-income">previous article</a>,
+  it is not your software which generates the revenue, but your entire business generates the cashflow.
+  <figure style="text-align:center">
+    <img src="/images/posts/income-software.png">
+  </figure>
+</p>
+
+<h2>Internally developed software is priced to zero !? As no one buys your software</h2>
+<p>
+  For almost all companies, no one else will buy your software. If anyone does, he/she buys your entire company or your entire business, rather than just software.
+
+  That is different from other non-physical assets, like intellectual properties. If you have copyright of famous musician's songs, some investors might want to buy them.
+
+  However, if you developed software for your own company, no matter how good it is, no one would buy it.
+
+  So, no one buys your software ... then its price must be zero?
+</p>]]></description>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</guid>
+    </item>
+    
+    
+    <item>
       <title>Pricing and Accounting Software - Income</title>
       <description><![CDATA[
 <figure style="text-align:center">
@@ -61,7 +203,7 @@
 
 <p>
   Then is it just meaningless to think about "how much revenue does the software generate"?
-  Well, it is still very important, especially when you think about <strong>change</strong> in revenue, created from software enhancement, replacement, retirement.
+  Well, it is still very important, especially when you think about <strong>change in revenue</strong>, created from software enhancement, replacement, retirement.
   Or even if running legacy software application without any change, you might see change in the revenue.
 </p>
 
@@ -69,7 +211,7 @@
   We'll explore more about revenue change and software relationship in future articles.
 </p>
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
     </item>
@@ -137,7 +279,7 @@
   We'll explore the possibilities of leveraging such metrics in later blog posts.
 </p>
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
     </item>
@@ -219,7 +361,7 @@
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
     </item>
@@ -301,7 +443,7 @@
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
     </item>
@@ -367,7 +509,7 @@
 
 </p>
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
     </item>
@@ -444,7 +586,7 @@
 <p>
   Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
 </p>]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
     </item>
@@ -558,7 +700,7 @@
 <p>
   So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
 </p>]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
     </item>
@@ -644,7 +786,7 @@
 
 <p>However, this is still an informative paper providing probabilistic view on software project management.</p>
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
     </item>
@@ -707,7 +849,7 @@
 
 
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
     </item>
@@ -824,7 +966,7 @@
   Let's enter in the frameworks and in the field from the next article in the series.
 </p>
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
     </item>
@@ -838,7 +980,7 @@
 
 
 ]]></description>
-      <pubDate>Fri Jan 22 2016 00:30:23 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/about</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
     </item>
