@@ -8,6 +8,160 @@
     
     
     <item>
+      <title>Software Engineering, complemented by Financial Engineering for quantitative analysis, business decisions</title>
+      <description><![CDATA[
+<h2>Software Engineering has been successful in creating great software products</h2>
+<p>
+  Like you can see many people signed up for "<a href="http://manifesto.softwarecraftsmanship.org/">Software Craftsmanship Manifesto</a>",
+  programmers are self-driven, serious people, willing to make the world better with technologies.
+  Thus there has always been tremendous innovations in the software industry.
+</p>
+
+<p>
+  For example, I am always impressed by the fast paced development of web front-end frameworks and libraries,
+  which people usually say "trends change every half a year". Web front-end programmers are doing pretty good job
+  trying to resolve problems which many other people face, in this rapid moving environment.
+  <figure>
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/wordcloud.svg">
+  </figure>
+</p>
+
+<p>
+  Not only about software itself, also there has been a lot of effort in <strong>software development processes</strong>.
+  Best practices are shared and publicized, and modern development environment has automated test with good coverage,
+  strict but active code review process, issues and enhancement requests are tracked in one place, building process is becoming more and more automated.
+
+  <figure>
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/wordcloud2.svg">
+  </figure>
+</p>
+
+<h2>Most software projects still fail today</h2>
+<p>
+  OK, so now programmers know <strong>how</strong> to create great software,
+  is it getting easier to make software projects successful?
+</p>
+<p>
+  The answer is sadly no. Still, <strong>most of software projects fail</strong>, or at their best, deliver software with poor quality.
+  You can see the <a href="#references">references</a> about failed projects.
+</p>
+
+<h2>Software Engineering has been "Craftsmaship" rather than Science</h2>
+<p>
+  Did those projects fail because the programmers and project managers were not skilled enough?
+  That is true to some extent.
+</p>
+
+<p>
+  However, this Craftsmanship mind, focusing on right use of <strong>technologies</strong> and <strong>methodologies</strong> lacks a significantly important point.
+  There is harsh truth:
+</p>
+
+<p style="font-size: 24px; text-align: center">
+  Projects still fail, no matter how skilled programmer you are.
+</p>
+
+<p>
+  Do you think top level programmers, with excellent project managers, will make every project successful?
+  Certain percentage of projects will fail even though you hire the best people.
+  Creating and maintaining Software is now truly a business, and there is no single business you know it will succeed, no matter how skilled people you have.
+  And what's more, in real world, that is just impossible to hire the best people. Every company lacks well skilled developers, well skilled project managers, but they still need to do their business.
+</p>
+
+<p>
+  Software Craftsmanship - building up on Software Engineering skills is very <stron>important</stron>, but it is only one side of the story.
+  You also need to learn about how to make sound business judgement, as you cannot always expect
+  top level programmers to work for your company.
+</p>
+
+<h2>Financial Engineering for quantitative analysis, and sound business judgement under uncertainty</h2>
+<p>
+  There are important questions like below, traditional Software Engineering didn't answer:
+  <ul>
+    <li>Does this new technology saves us money, or actually we <strong>lose</strong> money?</li>
+    <li>How <strong>likely</strong> does my project get extended?</li>
+    <li>Two good technologies - which <strong>fits</strong> us better?</li>
+    <li>Replacing a <strong>legacy</strong> system, or invest in something else?</li>
+    <li><strong>Total</strong> cost of software project ... including maintenance cost</li>
+  </ul>
+
+  These questions could be answered if you have adequate expertise on subject technologies and methodologies.
+  If you are a Object Oriented Programming expert, you know what benefits it brings to your company. However, at the same time,
+  are you also a Functional Programming expert? What if project managers think Functional styles would bring certain benefit but they are not sure if they are willing to invest in it?
+  You need to answer to such questions in real world, <strong>without having time</strong> to learn about everything.
+</p>
+
+  <figure>
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/software-engineering-2.png">
+  </figure>
+
+<p>
+  Financial Engineering frameworks are exactly built to meet such a situation - you don't know what happens in the future,
+  but you still make investment decisions. Financial Engineering enhances Software Engineering especially in the following aspects:
+  <ul>
+    <li><strong>Quantitative</strong> analysis of software development cost and maintenance cost</li>
+    <li><strong>Probabilistic</strong> frameworks to make business decisions, under uncertainty</li>
+  </ul>
+
+  I am excited to introduce methodologies, and more excited to hear about suggestions and critiques from others, to build this framework better and more robust!
+</p>
+]]></description>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</guid>
+    </item>
+    
+    
+    <item>
+      <title>Introducing Springer's Journals of Systems and Software</title>
+      <description><![CDATA[<h2>Journal of Systems and Software, Springer's academic journal for software engineering</h2>
+
+<p>
+  <a href="http://www.journals.elsevier.com/journal-of-systems-and-software">Journal of Systems and Software</a> provides you state of the art researches in software engineering,
+  including but not only limited to below:
+  <ul>
+    <li>Methods and tools for, and empirical studies on, software requirements, design, architecture, verification and validation, maintenance and evolution</li>
+    <li>Agile, model-driven, service-oriented, open source and global software development</li>
+    <li>Human factors and management concerns of software development</li>
+    <li>Metrics and evaluation, data mining of software development resources</li>
+    <li>Business and economic aspects of software development processes</li>
+  </ul>
+
+  where a <a href="http://www.sciencedirect.com/science/journal/01641212">sample issue</a> looks like this.
+  One article I reviewed before,
+</p>
+
+<h2>Software Engineering is really worth studying?</h2>
+<p>
+  By saying Software Engineering, I am only talking about the stuff like project and software management, cost analysis, systems development processes.
+</p>
+
+<p>
+  Some people are skeptical about the value of Software Engineering for such matters.
+  Even a famous computer scientist <a href="https://www.quora.com/Do-you-agree-with-Edsger-Dijkstras-opinion-of-Software-Engineering-and-why">Edsger Dijkstra criticized Software Engineering</a> back in 1980s.
+</p>
+
+<p>
+  It is true that Software Engineering doesn't have as strict and robust models as other engineering like Mechanical Engineering.
+  Since software is created as a result of human activities, sometimes from hundreds of people, it is <strong>impossible</strong> to give a robust mathematical model to describe the dynamics.
+</p>
+
+<p>
+  Rather, I would think Software Engineering as a <strong>Social Science</strong> field.
+  You cannot apply the same mathematical model to every single problem.
+  However, still empirical studies give you probabilistic and statistical sense on how the software development and maintenance would go.
+  Also studies like Psychology and Game Theories would give explanation about behavior and motivation of your programmer colleagues.
+  And finally Economic and Financial studies would help you make economically sound judgement at any point of software development and maintenance life cycle.
+</p>
+
+]]></description>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/journals-of-systems-and-software</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/journals-of-systems-and-software</guid>
+    </item>
+    
+    
+    <item>
       <title>Pricing and Accounting Software - Debt</title>
       <description><![CDATA[<h2>Why the metaphor Technical "Debt" is used? Because it causes maintenance costs</h2>
 <p>
@@ -32,7 +186,7 @@
   And as the time goes by, the debt amount decreases.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-debt-financial-debt.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-debt-financial-debt.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">Image by sheelamohan at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </p>
@@ -41,7 +195,7 @@
   Also another important property is that usually it is straightforward to derive the periodic payment amount,
   from the debt amount for Financial Debt.
   <figure style="text-align:center">
-    <img src="/images/posts/income-bond.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-bond.png">
   </figure>
 </p>
 
@@ -53,7 +207,7 @@
   you don't need to pay back Technical Debt.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-debt-technical-debt.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-debt-technical-debt.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Worried_Businessman_With_Pc_p67341.html">Image by David Castillo Dominici at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 
@@ -74,7 +228,7 @@
 
 <p>
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-debt-technical-debt-model.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-debt-technical-debt-model.png">
     <figcaption>
       Images by
       <a href="http://www.freedigitalphotos.net/images/Education_g314-Mathematical_Background_p86649.html">Janaka Dharmasena</a>
@@ -90,7 +244,7 @@
 
 </figure>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</guid>
     </item>
@@ -104,7 +258,7 @@
   When you purchased a packaged software product, it is easy to tell the asset value of the software.
   That is just the purchase price (and if necessary, you apply <a hre="https://en.wikipedia.org/wiki/Depreciation">"depreciation"</a> accounting).
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-asset-package.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-asset-package.png">
   </figure>
 </p>
 
@@ -112,7 +266,7 @@
 <p>
   On the other hand, it becomes difficult when you try to evaluate the software you developed internally in your company.
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-asset-internal.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-asset-internal.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">Image by renjith krishnan at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </p>
@@ -121,7 +275,7 @@
   One possible approach is to calculate <a href="http://www.investopedia.com/terms/d/dcf.asp">"Discounted Cash Flow"</a> which is generated from your software.
   In this case, the cashflow is the revenue generated from the software.
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-asset-cashflow.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-asset-cashflow.png">
   </figure>
 </p>
 
@@ -129,7 +283,7 @@
   However, that is not almost always impossible. As we saw in the <a href="pricing-and-accounting-software-income">previous article</a>,
   it is not your software which generates the revenue, but your entire business generates the cashflow.
   <figure style="text-align:center">
-    <img src="/images/posts/income-software.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-software.png">
   </figure>
 </p>
 
@@ -143,7 +297,7 @@
 
   So, no one buys your software ... then its price must be zero?
 </p>]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</guid>
     </item>
@@ -153,14 +307,14 @@
       <title>Pricing and Accounting Software - Income</title>
       <description><![CDATA[
 <figure style="text-align:center">
-  <img src="/images/posts/income.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income.png">
 </figure>
 
 <h2>Income from software - illustrated by the single-app E-Commerce company</h2>
 <p>
   Like my previous articles, let's continue the discussion about the same single-app E-commerce company, to make the argument simple.
   <figure style="text-align:center">
-    <img src="/images/posts/income-e-sales.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-e-sales.png">
   </figure>
 </p>
 
@@ -172,7 +326,7 @@
 <p>
   Then, it would feel natural and easy to associate all the revenue to "e-Sales". However...
   <figure style="text-align:center">
-    <img src="/images/posts/income-revenue.jpg" style="max-width:100%; height:auto">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-revenue.jpg" style="max-width:100%; height:auto">
     <figcaption><a href="http://www.freedigitalphotos.net/images/business-graph-with-dollar-sign-photo-p391087">Image by dream designs at FreeDigitalPhotos.net</a></figcaption>
   </figure></p>
 </p>
@@ -189,7 +343,7 @@
 </p>
 
 <figure style="text-align:center">
-  <img src="/images/posts/income-bond.png" style="max-width:100%; height:auto">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-bond.png" style="max-width:100%; height:auto">
 </figure></p>
 
 <p>
@@ -198,7 +352,7 @@
 </p>
 
 <figure style="text-align:center">
-  <img src="/images/posts/income-software.png" style="max-width:100%; height:auto">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-software.png" style="max-width:100%; height:auto">
 </figure></p>
 
 <p>
@@ -211,7 +365,7 @@
   We'll explore more about revenue change and software relationship in future articles.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
     </item>
@@ -236,7 +390,7 @@
   So, the detailed report looks like this.
 
   <figure style="text-align:center">
-    <img src="/images/posts/rescuetime-3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/rescuetime-3.png">
   </figure>
 
 </p>
@@ -247,13 +401,13 @@
   until you move focus to another application.
 
   <figure style="text-align:center">
-    <img src="/images/posts/rescuetime-1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/rescuetime-1.png">
   </figure>
 
   For web browsers, RescueTime can give more detailed tracking, by each web page.
 
   <figure style="text-align:center">
-    <img src="/images/posts/rescuetime-2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/rescuetime-2.png">
   </figure>
 
   The collected time usage data is sent to RescueTime's cloud, and aggregated to show the report like shown at the top of this article.
@@ -279,7 +433,7 @@
   We'll explore the possibilities of leveraging such metrics in later blog posts.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
     </item>
@@ -293,7 +447,7 @@
   In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense.png">
   </figure>
 </p>
 
@@ -309,7 +463,7 @@
   To avoid complexity, I use a very simple setup here to illustrate how it works.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense-esale1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale1.png">
   </figure>
 
   Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
@@ -321,7 +475,7 @@
   For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense-esale2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale2.png">
   </figure>
 </p>
 
@@ -329,7 +483,7 @@
   What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense-esale3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale3.png">
   </figure>
 </p>
 
@@ -361,7 +515,7 @@
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
     </item>
@@ -375,7 +529,7 @@
   In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense.png">
   </figure>
 </p>
 
@@ -391,7 +545,7 @@
   To avoid complexity, I use a very simple setup here to illustrate how it works.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense-esale1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale1.png">
   </figure>
 
   Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
@@ -403,7 +557,7 @@
   For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense-esale2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale2.png">
   </figure>
 </p>
 
@@ -411,7 +565,7 @@
   What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting-expense-esale3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale3.png">
   </figure>
 </p>
 
@@ -443,7 +597,7 @@
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
     </item>
@@ -463,13 +617,13 @@
   it is to preserve the original behavior of the software, but still make it better designed.
 
   <figure style="text-align:center">
-    <img src="/images/posts/refactoring1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring1.png">
   </figure>
 
   So, essentially the Technical Debt will be reduced without having to reduce software's value.
 
   <figure style="text-align:center">
-    <img src="/images/posts/refactoring2.png" style="max-width:100%; height:auto;;">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring2.png" style="max-width:100%; height:auto;;">
   </figure>
 
   As the Technical Debt was decreased, the software becomes easier to maintain, less error prone, and the mainteance cost will be saved.
@@ -482,13 +636,13 @@
   For example, you introduced unexpected bugs, or you chose wrong design or implementation so that it actually becomes difficult to maintain and change the code going forward.
 
   <figure style="text-align:center">
-    <img src="/images/posts/refactoring3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring3.png">
   </figure>
 
   In such a case, total Technical Debt of the software is increased,
 
   <figure style="text-align:center">
-    <img src="/images/posts/refactoring4.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring4.png">
   </figure>
 
   And thus the maintenance cost is also increased. It is analogous to increase in Financial Debt causing increase in debt charge too.
@@ -509,7 +663,7 @@
 
 </p>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
     </item>
@@ -524,7 +678,7 @@
   explained how to treat software and technical debt in terms of Financial Accounting.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting5.1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting5.1.png">
   </figure>
 
   In this article, let me try explaining how enhancement (e.g. adding a new feature to software) affects this balance.
@@ -535,7 +689,7 @@
   Software enhancement is made for benefits, but that's only one side of the story.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting8.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting8.png">
   </figure>
 
   When making an enhancement, you are most likely adding new lines of code. And as in the previous post, any single line of code is Technical Debt.
@@ -549,7 +703,7 @@
 
 <p>
   <figure style="text-align:center">
-    <img src="/images/posts/accounting9.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting9.png">
   </figure>
 
   However, making enhancement also increases the value of your software, as it performs better or supports more features.
@@ -561,13 +715,13 @@
   On the other hand, if you do a bad enhancement, you will increase the Technical Debt a lot more. Typically you add buggy code and that causes a lot of troubles afterwards.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting10.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting10.png">
   </figure>
 
   In such a case, you need to pay more maintenance cost and the benefit from the enhancement is diminished.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting11.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting11.png">
   </figure>
 </p>
 
@@ -586,7 +740,7 @@
 <p>
   Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
 </p>]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
     </item>
@@ -600,21 +754,21 @@
   Disclaimer - the pictures used in this post are not as strict and accurate as the U.S. and most other countries' accounting standars require, but still serve as illustration of basic concepts.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting1.png">
     <figcaption>Figure 1. Asset (Cash) and Liability (Debt) are balanced</figcaption>
   </figure>
 
   Firstly, when you borrow, (e.g.) $1,000 from someone, you get $1,000 cash on the asset side, and $1,000 on the debt side in your accounting.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting2.png">
     <figcaption>Figure 1. You pay back $100 of the debt</figcaption>
   </figure>
 
   Afterwards, you pay back part of the debt, $100.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting3.png">
     <figcaption>Figure 3. Charge for the debt</figcaption>
   </figure>
 
@@ -623,7 +777,7 @@
   Of course, if you borrow $1,000, you don't just save it in your account. You borrowed the money to invest in something else, hopefully earning more than the charge of the debt.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting4.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting4.png">
     <figcaption>Figure 4. You borrowed cash for investment</figcaption>
   </figure>
 
@@ -660,21 +814,21 @@
   You can look at <a href="http://c2.com/cgi/wiki?WardExplainsDebtMetaphor">"Ward (Cunningham) Explains Debt Metaphor"</a> to see why and how software is referred as debt.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting5.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting5.png">
     <figcaption>Figure 5. As long as you have software, there is always Technical Debt</figcaption>
   </figure>
 
   Like in Finance, you pile up Technical Debt to create or purchase software asset.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting6.png" style="max-width:100%; height:autox;">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting6.png" style="max-width:100%; height:autox;">
     <figcaption>Figure 6. Technical Debt causes maintenance cost</figcaption>
   </figure>
 
   Technical debt causes cost in maintenance. as financial debt causes debt charge. One interesting thing about Technical Debt is you might end up only paying maintenance cost, without paying back the debt.
 
   <figure style="text-align:center">
-    <img src="/images/posts/accounting7.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting7.png">
     <figcaption>Figure 7. Software generates benefit, that is why it can be accounted as an asset</figcaption>
   </figure>
 
@@ -700,7 +854,7 @@
 <p>
   So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
 </p>]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
     </item>
@@ -767,7 +921,7 @@
 <p>The below is a figure from the paper, showing the results of 5,000 Monte Carlo simulations of the entire project.</p>
 
 <figure style="text-align:center">
-  <img src="/images/posts/monte-carlo.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/monte-carlo.png">
 </figure>
 
 <h2>What are the benefits, and challenges?</h2>
@@ -786,7 +940,7 @@
 
 <p>However, this is still an informative paper providing probabilistic view on software project management.</p>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
     </item>
@@ -797,7 +951,7 @@
       <description><![CDATA[<h2>You can never tell when your Software Project will be finished</h2>
 
 <figure style="text-align:center">
-  <img src="/images/posts/ID-10098216.jpg">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/ID-10098216.jpg">
   <figcaption><a href="http://www.freedigitalphotos.net/images/Ideas_and_decision_m_g409-Figure_With_Red_Question_Mark_p98216.html">Image by Master isolated images at FreeDigitalPhotos.net</a></figcaption>
 </figure>
 
@@ -816,7 +970,7 @@
 <p>For example, you may be using legacy and well-known technologies in one of the projects, and you can give more accurate estimate on project's completion. The other project might involve newer technologies you are not familiar with. In such a case, the former project has less risk. The latter has more risk.</p>
 
 <figure style="text-align:center">
-  <img src="/images/posts/risk.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/risk.png">
 </figure>
 
 <p>So, a riskier project <strong>doesn't necessarily</strong> mean a longer project. If project's completion is <strong>less predictable</strong>, the project is <strong>riskier</strong>.</p>
@@ -849,7 +1003,7 @@
 
 
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
     </item>
@@ -863,7 +1017,7 @@
 
 <div style="text-align:center">
   <figure>
-    <img src="/images/posts/ID-10056727.jpg">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/ID-10056727.jpg">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </div>
@@ -936,7 +1090,7 @@
 
 <div style="text-align:center">
   <figure>
-    <img src="/images/posts/questions.jpg">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/questions.jpg">
     <figcaption><a href="http://www.freedigitalphotos.net/images/question-mark-on-cubes-shows-uncertainty-photo-p175169">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </div>
@@ -956,7 +1110,7 @@
 
 <div style="text-align:center">
   <figure>
-    <img src="/images/posts/uncertainty.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/uncertainty.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </div>
@@ -966,7 +1120,7 @@
   Let's enter in the frameworks and in the field from the next article in the series.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
     </item>
@@ -980,7 +1134,7 @@
 
 
 ]]></description>
-      <pubDate>Sat Jan 23 2016 01:46:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Jan 25 2016 01:58:25 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/about</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
     </item>
