@@ -3,7 +3,7 @@
   <head lang="en">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Let's continue explaining software in terms of accounting">
+<meta name="description" content="Let's start a discussion on pricing software under a Financial arbitrage context. Pricing a contract under the arbitrage context is a fundamental technique in Finance, so we are introducing the same technique in software pricing.">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
-    <meta property="og:title" content="Pricing and Accounting Software - Expenses">
+    <meta property="og:title" content="Pricing Software in Financial Arbitrage Context - Intro">
 <meta property="og:type" content="blog">
 
 
@@ -29,10 +29,10 @@
   
 
 
-<meta property="og:url" content="http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses.html">
+<meta property="og:url" content="http://richard-imaoka.github.io/posts/arbitrage-software-intro.html">
 <meta property="og:image" content="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/software-engineering-2.png">
 <meta property="og:site_name" content="Quantitative Software Engineering by Richard Imaoka">
-<meta property="og:description" content="Let's continue explaining software in terms of accounting">
+<meta property="og:description" content="Let's start a discussion on pricing software under a Financial arbitrage context. Pricing a contract under the arbitrage context is a fundamental technique in Finance, so we are introducing the same technique in software pricing.">
 
   </head>
   <body>
@@ -72,80 +72,126 @@
             <div class="blog-item">
               <div class="row">
                 <div class="col-xs-12 col-sm-12 blog-content">
-                  <h1>Pricing and Accounting Software - Expenses</h1>
-                  <p>Let's continue explaining software in terms of accounting</p>
-                  <h2>Expenses is mainly maintenance cost of your software</h2>
+                  <h1>Pricing Software in Financial Arbitrage Context - Intro</h1>
+                  <p>Let's start a discussion on pricing software under a Financial arbitrage context. Pricing a contract under the arbitrage context is a fundamental technique in Finance, so we are introducing the same technique in software pricing.</p>
+                  <h2>Financial Arbitrage, when the same product is in different prices</h2>
 <p>
-  As previously discussed in earlier posts, I split software into the four components as below.
-  In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
-
-  <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense.png">
-  </figure>
+  What is arbitrage in finance? It is a trading method, to make a profit from the difference in prices, on the same product.
+  The following video by Khan Academy gives good basics of arbitrage.
 </p>
 
-<h2>Example: Single-Application E-commerce company</h2>
-<p>
-  In the real world, calculating software maintenance cost is pretty complicated.
-
-  A lot of people with different roles might use the same software, including developers, DevOps people, designers, etc.
-  Also there could be hardware and electricity costs associated the software.
-</p>
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/AuCH7fHZsZ4?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <p>
-  To avoid complexity, I use a very simple setup here to illustrate how it works.
-
-  <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale1.png">
-  </figure>
-
-  Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
-  And then let's also assume there are 3 developers supporting the e-Sales software. They maintain and enhance the e-Sales.
+  Usually it is very rare that there is a pure arbitrage opportunity. (i.e.) same exact products are traded in two different prices.
+  Most of the time, there is no such case, or there is too little price difference
+  so that your arbitrage profit would be diminished by tax and trading cost.
 </p>
 
 <p>
-  If we could somehow measure the percentage of their time usage, and time usage by each developer can be like this.
-  For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
+  If you have an arbitrage opportunity on a certain product, as in the video, the price difference will converge to a point where there is no more arbitrage ooportunity.
+  In other  words, you can say:
+  <ul>
+    <li>if you see an arbitrage opportunity, the product is <strong>wrongly priced</strong></li>
+    <li>the <strong>correct</strong> price of the product is so that there is <strong>no arbitrage</strong> opportunity</li>
+  </ul>
+</p>
 
-  <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale2.png">
-  </figure>
+<h2>For software, you cannot easily sell or buy it</h2>
+<p>
+  To expand the same arbitrage-based pricing discussion to software, there is actually a big problem - you cannot easily sell or buy software.
+  As in a previous article, <a href="pricing-and-accounting-software-asset.html">"Pricing and Accounting Software - Asset"</a>,
+  you can buy software easily, only when the software is packaged.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-youcant-sell.png">
+  <figcaption><a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">Image by stockimages at FreeDigitalPhotos.net</a></figcaption>
+</figure>
+
+<p>
+  For example, when an external investor comes in, and he is interested in your precious e-Commerse software, "e-Sale".
+  Does he just buy the software only? No he doesn't. Just buying software doesn't do anything - the investor actually
+  wants to acquire the entire e-Commerce business, including people supporting the software and the business.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-you-buy-everything.png">
+  <figcaption>
+    Images by <a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">stockimages</a>
+    and <a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">renjith krishnan</a>
+    at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<p>
+You know that is what happens in actual tech businesses. It's M&A where known cases are like:
+<ul>
+  <li>Google bought youtube</li>
+  <li>Microsoft bought Dropbox</li>
+  <li>...etc, </li>
+</ul>
+They just didn't buy software only, but they bought the entire businesses and the people, to keep running the same service after the mergers.
 </p>
 
 <p>
-  What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
-
-  <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale3.png">
-  </figure>
+  So unlike financial markets, even if a software product is wrongly priced, it is not easy to take advantage of the arbitrage opportunity.
+  This results in a prevalent situation in the software industry, so that most software product is wrongly priced,
+  since arbitrage dynamics to correct prices does not work.
 </p>
 
-<p style="text-align: center; font-size: 14px">
-  $3,800 x 30% + $3,500 x 50% + $4,000 x 45% <br>
-  = $4,690 / Month
+<h2>Pricing Software, by assuming it as a complex Financial Derivative contract</h2>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-complex-derivative2.png">
+  <figcaption>
+    Images by <a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">sheelamohan</a>
+    and <a href="http://www.freedigitalphotos.net/images/interconnected-network-structure-shows-networking-photo-p206671">Stuart Miles</a>
+    at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<p>
+  As discussed, we cannot just buy or sell software easily. Thus, you don't know the exact price of software.
 </p>
 
 <p>
-  Good, with this simple formula, and (a lof of) assumptions, we could show the monthly maintenance cost of the e-Sales software.
-</p>
-
-<h2>Tracking time usage is possible?</h2>
-<p>
-  Again, in real-life situations, it doesn't go like this simple.
+  So, pricing software is just an exercise bound to failure? Not actually, to price software, you can assume it as a <strong>complex derivative contract</strong>,
+  and de-compose it into cash flows it consists of.
 
   <ul>
-    <li>More than a single team of people might be supporting e-Sales</li>
-    <li>Joe, Katie and Alice might be supporting other applications than e-Sales</li>
-    <li>Most problematic issue is - <strong>time usage analysis is pretty difficult</strong></li>
+    <li>Incoming cash flows = Revenue</li>
+    <li>Outgoing cash flows = Cost</li>
   </ul>
-
 </p>
 
 <p>
-  So is it just impossible to calculate software maintenance cost? I think the answer is that, it is impossible to give 100% accurate analytics, however,
-  the advance of current technologies like <a href="https://www.rescuetime.com/">Rescue Time</a> enabled, or at least would enable in near future, to keep track of time usage in an acceptable accuracy.
+  Put simply,
+</p>
 
-  <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
+<p style="font-size:14px; text-align: center">
+  <strong>Software Value = Revenue - Cost = Net cash flow</strong>
+</p>
+
+<p>
+  However, it is much more difficult than it might look like - the reasons why I said it is a "complex" derivative are because:
+  <ul>
+    <li>Revenues are unknown in advance,</li>
+    <li>Maintenance cost is also unknown in advance</li>
+  </ul>
+  Also, even if revenues and maintenance cost are "known" when they became past-dated, it is hard to tell what percentage of them is from software's contribution.
+  You can see the below articles about more discussion.
+  <ul>
+    <li><a href="pricing-and-accounting-software-income.html">Pricing and Accounting Software - Income</a></li>
+    <li><a href="pricing-and-accounting-software-expenses.html">Pricing and Accounting Software - Expenses</a></li>
+  </ul>
+</p>
+
+<p>
+  In future articles, we model software as a complex derivative contract with unknown cash flows,
+  and we will see how that enables the arbitrage argument to give a price of software.
 </p>
                   
                   <div id="disqus_thread"></div>
