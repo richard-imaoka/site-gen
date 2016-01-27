@@ -8,6 +8,185 @@
     
     
     <item>
+      <title>Pricing Software in Financial Arbitrage Context - Forms of selling software</title>
+      <description><![CDATA[<h2>Selling software is nearly impossible</h2>
+
+<p>
+  As in <a href="arbitrage-software-intro.html">Pricing Software in Financial Arbitrage Context - Intro</a>,
+  you cannot sell your software other than the below M&A case where you ser selling your entire company.
+
+  This makes it very hard to construct an arbitrage argument.
+</p>
+
+<h2>Selling the company - the only pure form of sell</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-m_and_a.png">
+</figure>
+<p>
+  This is the only pure for of selling, although you are not selling the software only but the entire business, company.
+</p>
+
+<h2>Retire the software</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-retire.png">
+  <figcaption>
+    Image by <a href="http://www.freedigitalphotos.net/images/Construction_g265-Pull_Down_Constuction_p56850.html">Surachai</a> at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+<p>
+  For some cases, you probably want to just stop using and maintaining your software.
+  When you are retiring the software, you can assume you are <strong>selling it at zero</strong> price, and getting rid of maintenance and investment.
+  Of course revenues generated from the software will also be gone.
+</p>
+
+<p>
+  Chances are like you stop doing unprofitable business, and then the underlying software is no longer needed.
+
+  You might make this retirement decision when maintenance cost is higher than the revenue it generates.
+</p>
+
+
+<h2>Replace the software you are using, with a new one</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-replace.png">
+  <figcaption>
+    Images by <a href="http://www.freedigitalphotos.net/images/abandoned-old-house-photo-p290063">Witthaya Phonsawat</a>
+    and <a href="http://www.freedigitalphotos.net/images/exterior-shot-of-a-glass-building-photo-p258343">stockimages</a>
+    at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<p>
+  A more common case than pure retirement is replacing the current software with a newly built one.
+  Possibly you are only replacing part of your entire software system, like replacing the middleware layer for better scalability etc.
+</p>
+
+<p>
+  This is actually a difficult investment decision, than most people think of.
+  The new software does not generate any revenue during the development phase, until it actually replaces the old one.
+  Also once the new software runs in production, it has much higher possibility of unknown bugs and issues.
+</p>
+
+<h2>Special case - set up a competitor company</h2>
+<p>
+  This is a special case which you are not actually selling software even at the zero price.
+</p>
+
+<p>
+  When you notice a certain company, has a very high maintenance cost in their software,
+  you can set up a new company running a competing service with them.
+
+  Supposedly you have much lower maintenance cost in your own software, so that you can
+  provide more attractive prices offering the similar service.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-setup-competitor.png">
+  <figcaption>
+    Image by <a href="http://www.freedigitalphotos.net/images/cloud-service-photo-p389883">zirconicusso</a> at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<p>
+  From the selling and buying discussion perspective, it is 1) buying (investing in) your own software which is similar to the rival company,
+  2) and then take take the revenue out of your rival.
+</p>
+
+<p>
+  So, you are not actually selling anything, but taking advantage of mis-priced (too high maintenance cost) of the software your rival had.
+</p>]]></description>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/arbitrage-software-selling</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-selling</guid>
+    </item>
+    
+    
+    <item>
+      <title>Pricing Software in Financial Arbitrage Context - Forms of buying software</title>
+      <description><![CDATA[<h2>Buying a software package</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-package.png">
+</figure>
+<p>
+  If you can find a software package that perfectly fits your needs, you can buy and install it to run your business.
+  This is common for utility programs like office suite, or non-core business applications like ledger software.
+  However, for core business software and applications, usually you cannot just buy a 3rd party package.
+</p>
+
+<h2>Buying a company as a whole - M&A</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-m_and_a.png">
+</figure>
+
+<p>
+  As discussed in the previous article <a href="arbitrage-software-intro.html">Pricing Software in Financial Arbitrage Context - Intro</a>,
+  when you are buying software which was built and used internally in another company, you will most likely need to buy the whole company.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-you-buy-everything.png">
+  <figcaption>
+    Image by <a href="http://www.freedigitalphotos.net/images/cloud-service-photo-p389883">zirconicusso</a> at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<h2>Invest in a software project</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-build.png">
+</figure>
+
+<p>
+  This is a very time consuming approach. However, still most of core-business software in many companies are built internally,
+  as it needs to satisfy their own needs.
+</p>
+
+<p>
+  Today, even if you decide to create your software from scratch, you don't really do it from the ground up.
+  Most likely you take advantage of Open Source Software, OSS. For example, you might build up front-end user interface in
+  web applications in React or Angular JS. Then on the backend, you might use MySQL for data storage, Chef for infrastructure management, etc.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-oss.png">
+</figure>
+
+<h2>Outsource software development</h2>
+
+<p>
+  This approach is similar to the above "Invest in a software project" approach. There are a different ways to develop software
+  outsourcing the resources. You can ask everything to a system vendor to develop software for you, partially leverage vendors for
+  some part of your system, or employ vendor developers as consultants for a given period of time, etc.
+</p>
+
+<h2>Cloud Subscription</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-cloud.png">
+  <figcaption>
+    Images by <a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">stockimages</a>
+    and <a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">renjith krishnan</a>
+    at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<p>
+  This is becoming more and more popular and important option recently. Due to explosive rise of cloud-based services,
+  even for core businesses, companies started integration with cloud-based services offered by 3rd parties.
+  Usually, companies build internal systems which talk to 3rd party cloud-based services via APIs, or use
+  web-based user interface or client application to access the services.
+</p>
+
+<p>
+  A commonly used example is GitHub. Companies often set up repositories there, and use its web pages to make pull requests,
+  manage issues, etc. Also GitHub's WebHook can call other services, even other cloud services like CircleCI or Jenkins build processes
+  to automate the software build procedure.
+</p>]]></description>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/arbitrage-software-buying</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-buying</guid>
+    </item>
+    
+    
+    <item>
       <title>Pricing Software in Financial Arbitrage Context - Intro</title>
       <description><![CDATA[<h2>Financial Arbitrage, when the same product is in different prices</h2>
 <p>
@@ -128,7 +307,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   In future articles, we model software as a complex derivative contract with unknown cash flows,
   and we will see how that enables the arbitrage argument to give a price of software.
 </p>]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-intro</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-intro</guid>
     </item>
@@ -233,7 +412,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   I am excited to introduce methodologies, and more excited to hear about suggestions and critiques from others, to build this framework better and more robust!
 </p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</guid>
     </item>
@@ -282,7 +461,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/journals-of-systems-and-software</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/journals-of-systems-and-software</guid>
     </item>
@@ -371,7 +550,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </figure>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</guid>
     </item>
@@ -424,7 +603,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
   So, no one buys your software ... then its price must be zero?
 </p>]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</guid>
     </item>
@@ -492,7 +671,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore more about revenue change and software relationship in future articles.
 </p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
     </item>
@@ -560,7 +739,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore the possibilities of leveraging such metrics in later blog posts.
 </p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
     </item>
@@ -642,7 +821,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
     </item>
@@ -724,7 +903,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
     </item>
@@ -790,7 +969,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
     </item>
@@ -867,7 +1046,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
 </p>]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
     </item>
@@ -981,7 +1160,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
 </p>]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
     </item>
@@ -1067,7 +1246,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <p>However, this is still an informative paper providing probabilistic view on software project management.</p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
     </item>
@@ -1130,7 +1309,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
     </item>
@@ -1247,7 +1426,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Let's enter in the frameworks and in the field from the next article in the series.
 </p>
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
     </item>
@@ -1261,7 +1440,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Tue Jan 26 2016 21:22:02 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/about</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
     </item>
