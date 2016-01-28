@@ -8,6 +8,251 @@
     
     
     <item>
+      <title>Software as a complex derivative contract</title>
+      <description><![CDATA[
+<h2>Arbitrage relationship on a Futures contract</h2>
+<p>
+  The below video by Investtools (from Ameritrade) gives quick illustration of what futures contract is.
+</p>
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Yqkq-w4Jl3c?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+  Once you understood what futures is, then let's think about its arbitrage relationship and how you derive the right price using arbitrage.
+  Assume there is an oil futures contract in a Financial market, and its currently traded at $1,100 for 3-month delivery.
+  So if you
+  <ul>
+    <li>Sell the futures contract, you will sell the oil at $1,100 3 months later</li>
+    <li>Buy the futures contract, you will buy the oil at $1,100 3 months later</li>
+  </ul>
+</p>
+
+<p>
+  To form up arbitraging trades, you can start selling the futures contract as in the below Fig. 1.
+  Note that from the futures contract, <strong>no money, or oil exchange happens today</strong>.
+</p>
+
+<figure>
+  <figcaption>
+    <span style="font-size: 20px"><strong>Fig 1. Selling Futures contract</strong></span>
+  </figcaption>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-futures.png">
+  <figcaption>
+    <a href="http://www.freedigitalphotos.net/images/Manufacturing_and_in_g199-Barrel_p11860.html">(Image by Suat Eman at FreeDigitalPhotos.net)</a>
+  </figcaption>
+</figure>
+
+<p>
+  At the same time, you can buy the oil, which is currently traded at $1,000. Buying oil is an immediate trade,
+  so you pay $1,000 and get the oil. However, you need to store oil somewhere, that will incur strage cost.
+</p>
+
+<figure>
+  <figcaption>
+    <span style="font-size: 20px"><strong>Fig 2. Buying Oil</strong></span>
+  </figcaption>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-underlier.png">
+  <figcaption><a href="http://www.freedigitalphotos.net/images/Manufacturing_and_in_g199-Barrel_p11860.html">Image by Suat Eman at FreeDigitalPhotos.net</a></figcaption>
+</figure>
+
+<p>
+  Also, you borrow money from a bank to support the buy of the oil. When you return back money, you will be charged $50 extra.
+</p>
+
+<figure>
+  <figcaption>
+    <span style="font-size: 20px"><strong>Fig 3. Borrowing money to buy oil</strong></span>
+  </figcaption>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-borrow.png">
+  <figcaption><a href="http://www.freedigitalphotos.net/images/Manufacturing_and_in_g199-Barrel_p11860.html">Image by Suat Eman at FreeDigitalPhotos.ne</a></figcaption>
+</figure>
+
+<p>
+  If you look at the above 3 figures, you will notice that you buy oil today and sell it 3 months later. So you will end up in no oil holding 3 months later.
+  So you just need to think about what cash difference you end up, to calculate the profit. Then,
+</p>
+
+<p style="font-size:14px; text-align: center">
+  <strong> Buying Oil today (- $1,000) + Borrowing $1,000 - Storage Cost ($50) - Return Borrowing ($1,050) + Selling Oil in 3 months (+ $1,100 ) = zero </strong>
+</p>
+
+<p>
+  This means that the oil futures price = $1,100 is <strong>correctly priced from arbitrage</strong> perspective.
+  If we talk about such a simple Financial derivative, arbitrage pricing is as simple as this. However, what about more complicated derivatives?
+</p>
+
+<h2>Arbitrage relationship on PRDC, a very complex derivative</h2>
+
+<p>
+  PRDC, Power-Reverse Dual Currency trade is a very complicated instrument as follows. You can look at the linked Wikipedia Document, and see there are
+  lot of components forming up this derivative transaction.
+</p>
+
+<figure>
+  <a href="https://en.wikipedia.org/wiki/Power_reverse_dual-currency_note"><img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/Derivatives_PRDC.png"></a>
+  <figcaption>
+    <a href="https://en.wikipedia.org/wiki/Power_reverse_dual-currency_note">PRDC structure by Wikipedia</a>
+  </figcaption>
+</figure>
+
+<p>
+  To construct an arbitrage pricing argument, you need to de-compose the complex derivative and apply the arbitrage pricing argument for each of
+  the de-coupled components. However, as given on the Wikipedia page, it is practically impossible to construct perfect (or even nearly-perfect)
+  arbitrage positions for PRDC.
+</p>
+
+<h2>De-compose Software, for arbitrage pricing discussion</h2>
+
+<p>
+  The PRDC situation is a  similar to software. To correctly price software, you can firstly de-compose it into smaller pieces,
+  and apply arbitrage pricing method to calculate each component's fair price.
+</p>
+
+<p>
+  The difficulty is coming from the fact that, like PRDC, it is practically <strong>impossible</strong> to find out <strong>complete replacement or alternative</strong> to any software component, even if you divide it up to
+  as small pieces as you can. That is why I treated software as <strong>complex derivative</strong>, like PRDC.
+</p>
+
+<p>
+  Anyway, we still need to de-compose software for arbitrage pricing, so let's assume there is a simple 2-tier web application software like below.
+  You have a web server, and its backend database.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-2-tier.png"></a>
+  <figcaption>
+    <a href="https://en.wikipedia.org/wiki/Power_reverse_dual-currency_note">PRDC structure by Wikipedia</a>
+  </figcaption>
+</figure>
+
+<p>
+  By de-composing it and looking into the database piece, you can calculate the cost contributions as follows:
+</p>
+<ul>
+  <li>Database License fee</li>
+  <li>Pay to Database Support Person</li>
+</ul>
+<p>
+  As the database itself does not generate revenue at all, we can only think about its cost.
+</p>
+
+<p>
+  Then we think about arbitrage - what would be the <strong>replacement</strong> and <strong>switching cost</strong>?
+  Maybe, if you have the database license fee, you might want to use open source databsae software like MySQL or Postgress.
+  Then there will be learning curve for the database support, and especially in the initial period after replacement you will see a higher number of issues than usual.
+</p>
+
+<p>
+  If the reduced database license fee, and reduced support person's workload (if possible) is worth the switching cost (increase in issues, supposedly short-term, development cost, etc),
+  it is an arbitrage trade, but as said above, this is not perfect arbitrage as you have uncertainty that actual cost would increase.
+</p>
+
+<p>
+  We will dig in further into this software pricing method in other articles.
+</p>]]></description>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</guid>
+    </item>
+    
+    
+    <item>
+      <title>Software as a complex derivative contract</title>
+      <description><![CDATA[
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-complex-derivative2.png">
+  <figcaption>
+    Images by <a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">sheelamohan</a>
+    and <a href="http://www.freedigitalphotos.net/images/interconnected-network-structure-shows-networking-photo-p206671">Stuart Miles</a>
+    at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<h2>Incoming Cash Flow of Software = Revenue</h2>
+
+<p>
+  To analyze software as a complex derivative, you need to decompose its cash flow structure.
+  Firstly let's look at its incoming cash flow, which is revenues generated from software (in a more strict sense, revenues from the business dependent on the software).
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-unpredictable-revenues.png">
+  <figcaption><a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">Image by stockimages at FreeDigitalPhotos.net</a></figcaption>
+</figure>
+
+<p>
+  It is almost always impossible to predict the exact revenues from the software, as you cannot tell what happens in the future,
+  future revenue has probabilistic nature.
+</p>
+
+<p>
+  To make further analysis, in later articles, it is important to take this probabilistic, uncertain nature of future cash flow into account.
+</p>
+
+<h2>What if the software doesn't generate revenue at all?</h2>
+
+<p>
+  There are cases where your software does not generate revenue at all. Even in such cases, you still pay maintenance cost for the software.
+  Examples of such software is backend database or data layer, middle tier like messaging layer, or maybe internal books and record system for accounting.
+</p>
+
+<p>
+  In other articles, I will discuss how to make investment, const analysis on such software, but basic techniques are:
+  <ul>
+    <li>Just focus on the cost components of the software</li>
+    <li>Or, think about the entire "system"</li>
+      <ul>
+        <li>and treat these as "part" of the whole revenue-generating system</li>
+      </ul>
+  </ul>
+</p>
+
+<h2>Outgoing Cash Flow of Software = Maintenance Cost</h2>
+
+<p>
+  The outgoing cash flow of software is maintenance cost in general.
+  And the large part of the maintenance cost is the pay to the developers and support people of the software.
+
+  Software metrics, for example as follows, help you to determine the cost break-down structure of software.
+</p>
+
+<ul>
+  <li>Frequency of troubles</li>
+  <li>Average time to trouble resolution</li>
+  <li>Build Frequency</li>
+  <li>Average build manual work load</li>
+</ul>
+
+<p>
+  As discussed in the below two articles, people's desktop app usage metrics can be a very useful metric.
+</p>
+<ul>
+  <li>Desktop app usage metrics... (e.g. RescueTime)</li>
+</ul>
+
+<p>
+  <a href="pricing-and-accounting-software-expenses-time-tracking.html">Pricing and Accounting Software - Expenses, Time-Tracking for Maintenance Cost Calculation</a>
+  <a href="pricing-and-accounting-software-expenses-rescuetime.html">Pricing and Accounting Software - Expenses, Time-Tracking with RescueTime</a>
+</p>
+
+<p>
+  Once you collected necessary software metrics, then you need to determine and calculate the cost associated to the software.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-unpredictable-cost.png">
+  <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Worried_Businessman_With_Pc_p67341.html">Image by David Castillo Dominici at FreeDigitalPhotos.net</a></figcaption>
+</figure>
+
+]]></description>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</guid>
+    </item>
+    
+    
+    <item>
       <title>Pricing Software in Financial Arbitrage Context - Forms of selling software</title>
       <description><![CDATA[<h2>Selling software is nearly impossible</h2>
 
@@ -95,7 +340,7 @@
 <p>
   So, you are not actually selling anything, but taking advantage of mis-priced (too high maintenance cost) of the software your rival had.
 </p>]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-selling</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-selling</guid>
     </item>
@@ -180,7 +425,7 @@
   manage issues, etc. Also GitHub's WebHook can call other services, even other cloud services like CircleCI or Jenkins build processes
   to automate the software build procedure.
 </p>]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-buying</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-buying</guid>
     </item>
@@ -307,7 +552,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   In future articles, we model software as a complex derivative contract with unknown cash flows,
   and we will see how that enables the arbitrage argument to give a price of software.
 </p>]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-intro</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-intro</guid>
     </item>
@@ -412,7 +657,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   I am excited to introduce methodologies, and more excited to hear about suggestions and critiques from others, to build this framework better and more robust!
 </p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</guid>
     </item>
@@ -461,7 +706,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/journals-of-systems-and-software</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/journals-of-systems-and-software</guid>
     </item>
@@ -550,7 +795,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </figure>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</guid>
     </item>
@@ -603,7 +848,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
   So, no one buys your software ... then its price must be zero?
 </p>]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</guid>
     </item>
@@ -671,7 +916,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore more about revenue change and software relationship in future articles.
 </p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
     </item>
@@ -739,7 +984,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore the possibilities of leveraging such metrics in later blog posts.
 </p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
     </item>
@@ -821,7 +1066,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
     </item>
@@ -903,7 +1148,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
     </item>
@@ -969,7 +1214,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
     </item>
@@ -1046,7 +1291,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
 </p>]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
     </item>
@@ -1160,7 +1405,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
 </p>]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
     </item>
@@ -1246,7 +1491,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <p>However, this is still an informative paper providing probabilistic view on software project management.</p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
     </item>
@@ -1309,7 +1554,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
     </item>
@@ -1426,7 +1671,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Let's enter in the frameworks and in the field from the next article in the series.
 </p>
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
     </item>
@@ -1440,7 +1685,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Wed Jan 27 2016 11:00:42 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Thu Jan 28 2016 10:23:05 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/about</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
     </item>
