@@ -8,6 +8,90 @@
     
     
     <item>
+      <title>New Framework, Library? Think of the Balance between Cost-Saving and Replacement-Cost Effects</title>
+      <description><![CDATA[<h2>"That software out there resolves my issue" syndrome</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-replace.png">
+  <figcaption>
+    Images by <a href="http://www.freedigitalphotos.net/images/abandoned-old-house-photo-p290063">Witthaya Phonsawat</a>
+    and <a href="http://www.freedigitalphotos.net/images/exterior-shot-of-a-glass-building-photo-p258343">stockimages</a>
+    at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<p>
+  As a software developer, are you sick of your current clunky development environment and
+  and buggy software continuously causing <strong>pain</strong> to you?
+  Do you dream of a peace situation with cleaner development processes,
+  easier and more fun development with newer framework, libraries, etc?
+</p>
+
+<p>
+  You might be thinking like:
+  <ul>
+    <li>Spring MVC sucks => why not Scala Play framework?</li>
+    <li>jQuery makes a mess => Angular or even React would be a rescue?</li>
+    <li>Terrible backend performance => let's introduce async, non-blocking frameworks</li>
+    <li>Why still CVS in 2016!? => let's do Git!</li>
+    <li>No manual testing anymore => CircleCI? Jenkins?</li>
+  </ul>
+</p>
+
+<p>
+  It is pretty important developers keep up to the current state of modern technologies, tools,
+  what technical challenges they are trying to resolve.
+  And yes, they would resolve some of your problems for sure.
+</p>
+
+<p>
+  However, most likely you <strong>suffer the same situation</strong> for long, maybe for years or that is never resolved.
+  There are certain reasons why it is as such, and we should carefully analyze this.
+</p>
+
+
+<h2>Replacement cost matters, even if you know the after-replacement world is a peace</h2>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-replacement-seesaw">
+</figure>
+
+<blockquote>If we use a framework X, then the maintenance burden would be 1/2!</blockquote>
+
+<p>
+  is probably right, but missing replacement cost.
+  End-to-end state comparison, (i.e):
+  <ul>
+    <li>"current situation" vs</li>
+    <li>"after replacement is done"</li>
+  </ul>
+  is not enough. You also have to think about replacement cost, too:
+  <ul>
+    <li>learning curve</li>
+    <li>initial-phase issues</li>
+    <li>retirement work for the existing software</li>
+    <li>etc...</li>
+  </ul>
+  Some of them is what "Technical Debt" discussion covers.
+</p>
+
+<p>
+  (There is also risk of actually adding more maintenance cost thant the benefit new technologies give,
+  but it's a different topic we will also cover later.)
+</p>
+
+<h2>Right comparison, to achieve better Tech environment</h2>
+<p>
+  I am going to cover this comparison in more detail, in a series of articles.
+  The purpose is to give sounding economic rationale, to "<strong>achieve</strong>" better Technology environment and stack by replacement,
+  <strong>NOT </strong> just to give enough reasons to deny the idea of replacement.
+</p>]]></description>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/end-to-end-state-comparison-not-complete</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/end-to-end-state-comparison-not-complete</guid>
+    </item>
+    
+    
+    <item>
       <title>Software as a complex derivative contract</title>
       <description><![CDATA[
 <h2>Arbitrage relationship on a Futures contract</h2>
@@ -151,7 +235,7 @@
 <p>
   We will dig in further into this software pricing method in other articles.
 </p>]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</guid>
     </item>
@@ -246,7 +330,7 @@
 </figure>
 
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</guid>
     </item>
@@ -340,7 +424,7 @@
 <p>
   So, you are not actually selling anything, but taking advantage of mis-priced (too high maintenance cost) of the software your rival had.
 </p>]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-selling</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-selling</guid>
     </item>
@@ -425,7 +509,7 @@
   manage issues, etc. Also GitHub's WebHook can call other services, even other cloud services like CircleCI or Jenkins build processes
   to automate the software build procedure.
 </p>]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-buying</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-buying</guid>
     </item>
@@ -552,7 +636,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   In future articles, we model software as a complex derivative contract with unknown cash flows,
   and we will see how that enables the arbitrage argument to give a price of software.
 </p>]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-intro</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-intro</guid>
     </item>
@@ -657,7 +741,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   I am excited to introduce methodologies, and more excited to hear about suggestions and critiques from others, to build this framework better and more robust!
 </p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</guid>
     </item>
@@ -706,7 +790,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/journals-of-systems-and-software</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/journals-of-systems-and-software</guid>
     </item>
@@ -795,7 +879,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </figure>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</guid>
     </item>
@@ -848,7 +932,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
   So, no one buys your software ... then its price must be zero?
 </p>]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</guid>
     </item>
@@ -916,7 +1000,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore more about revenue change and software relationship in future articles.
 </p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
     </item>
@@ -984,7 +1068,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore the possibilities of leveraging such metrics in later blog posts.
 </p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
     </item>
@@ -1066,7 +1150,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
     </item>
@@ -1148,7 +1232,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
     </item>
@@ -1214,7 +1298,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
     </item>
@@ -1291,7 +1375,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
 </p>]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
     </item>
@@ -1405,7 +1489,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
 </p>]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
     </item>
@@ -1491,7 +1575,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <p>However, this is still an informative paper providing probabilistic view on software project management.</p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
     </item>
@@ -1554,7 +1638,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
     </item>
@@ -1671,7 +1755,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Let's enter in the frameworks and in the field from the next article in the series.
 </p>
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
     </item>
@@ -1685,7 +1769,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Thu Jan 28 2016 18:42:32 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/about</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
     </item>
