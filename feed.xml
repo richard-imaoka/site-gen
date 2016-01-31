@@ -8,10 +8,311 @@
     
     
     <item>
-      <title>New Framework, Library? Think of the Balance between Cost-Saving and Replacement-Cost Effects</title>
-      <description><![CDATA[<h2>"That software out there resolves my issue" syndrome</h2>
+      <title>Software Liquidity and Monolithic Spread</title>
+      <description><![CDATA[<h2>Replacing a huge, monolithic software system is more expensive than replacing small-pieced system</h2>
+
+<p>
+  Let's assume you have a huge monolithic system and its replacement cost to a newer system is represented as follows.
+</p>
+  <figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-monolithic.png">
+</figure>
+
+<p>
+  If you split up the monolithic system into smaller components,
+</p>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-replace.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-split.png">
+</figure>
+
+<p>
+  Then you would be able to replace each component individually. And each of them has its own replacement cost.
+</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-small.png">
+</figure>
+
+<p>
+  Comparing the sum of small-component replacement and monolithic replacement, it tends to be that the replacement of the monolithic system is more expensive.
+  Let's call this as "Monolithic Spread" - this is the cost you are paying for your monolithic (i.e.) illiquid, harder-to-replace system.
+
+  It can be explained that smaller piece of the system is easier to replace, thus lower cost.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-spread.png">
+</figure>
+
+<h2>Monolithic spread matters on replacement, but there is an opposite effect on maintenance cost</h2>
+<p>
+  Thinking about replacement, it feels like your system should always be split up into smaller pieces so that each component can be
+  easily replaced by newer technology.
+</p>
+
+<p>
+  However, there is a known counter effect talking about maintenance cost. In certain cases, dividing up a monolithic system into smaller pieces
+  can cause more maintenance cost. So if you have no immediate plan of software replacement, you should be careful.
+</p>
+
+<p>
+  We will cover that topic in the next article.
+</p>
+]]></description>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/liquidity-and-monolithic</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/liquidity-and-monolithic</guid>
+    </item>
+    
+    
+    <item>
+      <title>Software Liquidity and cost saving</title>
+      <description><![CDATA[<h2>Liquidity in Finance is how easily you can buy or sell a particular asset</h2>
+<p>
+  In Finance, there is a concept called "liquidity", which represents how easily you can buy or sell an asset.
+  If you want a brief overview, <a href="http://www.investopedia.com/terms/l/liquidity.asp">Investopedia's Liquidity definition page</a> has a pretty nice video.
+</p>
+
+<p>
+  In a nutshell, an asset is more liquid if it's easier to buy or sell. For example, shares of famous companies like Microsoft have many active buyers and sellers.
+  Thus it is easy to find a buyer or a seller if you want to trade Microsoft's share.
+</p>
+
+<h2>Liquidity is represented by the price</h2>
+<p>
+  How is liquidity measured? There is no direct measure for liquidity, but it is represented by the price.
+
+  <ul>
+    <li><strong>liquid</strong> asset -> many potential sellers -> sellers are eager to sell at low price</li>
+    <li><strong>liquid</strong> asset -> many potential buyers -> buyers are eager to buy at high price</li>
+  </ul>
+
+  <figure>
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-liquidity-liquid.png">
+  </figure>
+</p>
+
+<p>
+  For an illiquid asset (opposite of liquid):
+  <ul>
+    <li><strong>illiquid</strong> asset -> almost no sellers -> someone might sell it if it's sold very high</li>
+    <li><strong>illiquid</strong> asset -> almost no buyers -> someone might buy it if it's bought very low</li>
+  </ul>
+
+  <figure>
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-liquidity-illiquid.png">
+  </figure>
+</p>
+
+<h2>Software asset is very illiquid, so purchase (investment) price tend to be high</h2>
+<p>
+  As you could imagine, software is a very illiquid asset.
+  When you want to buy software, you cannot find anyone who is selling ready-made software for your exact purpose,
+  so you need to make a long-term investment in software development.
+</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-liquidity-buy.png">
+</figure>
+<p>
+  Due to its illiquid nature, software investment tends to be expensive.
+  This is in other words, only seller who can give you the software is your developer team.
+  So you need to pay (invest) whatever price the developers say, as you have no other choice.
+</p>
+
+<p>
+  Talking about selling  (i.e. getting rid of) software software, it is also a costly.
+  illiquid asset is sold at a very low price (as no almost one wants to buy it), however...
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-liquidity-sell.png">
+</figure>
+
+<p>
+  ... selling in software is even worse. Since software is essentially a Technical debt, it incurs maintenance cost.
+  So, to get rid of your existing software, you actually need to <strong>pay</strong> money.
+  This is the <strong>replacement cost</strong> when you switch to newer software, which is also a long term investment.
+  Again you need to pay whatever your developer team says as the replacement cost.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-liquidity-debt.png">
+</figure>
+
+<p>
+  If you are turning down the entire business and throwing away software, you can just get rid of the software at the zero price.
+</p>
+
+<h2>How easy to create and get rid of software is the key for cost saving</h2>
+<p>
+  So from the liquidity perspective, it is critical to make your software easy to throw away, and create.
+  Otherwise, you need to pay extra cost when you invest in creating or replacing software.
+</p>]]></description>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/liquidity</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/liquidity</guid>
+    </item>
+    
+    
+    <item>
+      <title>Software Replacement as Risk Arbitrage</title>
+      <description><![CDATA[
+<h2>If Cost-saving effect is greater than replacement cost, it is an "arbitrage" opportunity</h2>
+<p>As <a href="replacement-cost-in-detail.html">discussed previously</a>, when you replace legacy software, you need to think about replacement cost and cost saving effect.</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-diagram3.png">
+</figure>
+
+<p>
+  And once you find that cost-saving effect is greater than replacement cost, then it is an "arbitrage" opportunity, which brings you  "guaranteed" profit.
+</p>
+
+<h2>However, software replacement is "risk" arbitrage, (i.e.) not 100% guaranteed profit</h2>
+<p>
+  The term "arbitrage" comes from Finance, which means you make guaranteed profit from mis-priced assets.
+  Mis-pricing means some assets are priced too high, or too low.
+</p>
+
+<p>
+  Coming back to the software world, mis-pricing in this context means, you are paying too high maintenance cost to the existing, legacy software.
+  Thus, replacing to newer, cheaper software means it is an arbitrage opportunity.
+</p>
+
+<p>
+  However, in real world situations, the profit is <strong>not 100% guaranteed</strong>, because your cost prediction could be wrong.
+  Let's review typical risk scenarios below...
+</p>
+
+<h3>Case 1 Project Overrun</h3>
+<p>Project might not meat the pre-defined deadline. In that case, you will need to pay more replacement cost than you predicted.</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-and-replacement-project-overrun.png">
+</figure>
+
+<h3>Case 2 More Dev resources needed</h3>
+<p>It is also typical that more people are put into the same project in the middle. Or if someone focused 50% of his/her time on the project, he/she is asked to devote 100% later, when it got lagged.</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-and-replacement-project-more-effort.png">
+</figure>
+
+<h3>Case 3 Mix of both</h3>
+<p>Even if more people are put into the project, still it can be lagged.</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-and-replacement-project-mix.png">
+</figure>
+
+<h3>Case 4 cost is not saved</h3>
+<p>Maybe the maintenance cost of new software is higher than the legacy software.</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-and-replacement-project-increase.png">
+</figure>
+
+<h2>Iterative reviews is necessary</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-and-replacement-project-review.png">
+</figure>
+
+<p>
+  It is a <strong>risk</strong> that actual cost-saving effect and replacement cost are different from what you expected.
+  Do you want to eliminate this risk? Unfortunately "eliminating" the risk is impossible, but you can mitigate it by iteratively reviewing where you are, revising the estimate,
+  as the replacement project goes on.
+</p>
+<p>
+  The iterative review process is so critical in decision making. At each iteration, you should look further and see what the best course of actions, given your risk tolerance.
+</p>
+]]></description>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/arbitrage-and-replacement</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-and-replacement</guid>
+    </item>
+    
+    
+    <item>
+      <title>Software Replacement: Comparison between Cost-Saving and Replacement-Cost Effects</title>
+      <description><![CDATA[<h2>Balance between cost-saving and replacement cost</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-seesaw.png">
+</figure>
+As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-complete.html">previous article</a>, "current state" vs. "after replacement done" comparison, is not complete. You need to think about cost saving vs replacement.
+
+<h2>Chart of cost and effort throughout the replacement</h2>
+<p>So, a typical system replacement project might look like this, in terms of developer's effort over time.</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-diagram1.png">
+</figure>
+
+<ul>
+  <li>Development phase</li>
+    <ul>
+      <li>While developing the new software, the legacy software is still used</li>
+    </ul>
+  <li>New software rolled out</li>
+    <ul>
+      <li>There could be a spike of issues, right after roll out</li>
+      <li>Legacy software is run in parallel with minimal maintenance, then retired afterwards</li>
+    </ul>
+  <li>Stable phase</li>
+    <ul>
+      <li>After the new software completely released the legacy one, it is expected to run in a lower cost</li>
+    </ul>
+</ul>
+
+<h2>Comparison on the chart</h2>
+<p>
+  Adding up the new and legacy software development + maintenance cost, the chart looks like this.
+</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-diagram2.png">
+</figure>
+
+<p>
+  So, the replacement cost is additional cost you pay, compared to the legacy system maintenance cost.
+  And the cost-saving effect is the difference between the new and legacy systems, over time.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-diagram3.png">
+</figure>
+
+<p>
+  If the cost-saving effect (i.e. the blue area) is bigger than the replacement cost (i.e. the pink area),
+  the replacement was successful. Note that the blue area continues to exist over a long period of time,
+  than what is shown in the the above chart.
+</p>
+
+<h2>You have to 1) think about probability, and 2) recognize immediate cost is more weighed than cost in the future</h2>
+
+<p>
+  Say, 3 years later, you get huge accumulated cost-saving effect, and as the new software is usually run for a long period of time.
+  Great, so do we always better replace legacy high-maintenance software to newer software? Even though there is replacement cost,
+  since cost-saving in long run pays it off, most likely we just better doing replacement?
+</p>
+
+<p>
+  Not actually. You need to consider:
+  <ul>
+    <li>Replacement cost is probabilistic, (e.g.) the development might take longer than you expected</li>
+    <li>Cost-saving effect is also probabilistic (e.g.) new software might be of higher maintenance</li>
+    <li>Time Value of money</li>
+      <ul>
+        <li>In economics, <strong>current</strong> cost is <strong>weighed more</strong> than cost in the future</li>
+        <li>So, replacement cost in near future, is weighed more than cost-saving effect afterwards, even though it saves cost for a longer period</li>
+        <li>(i.e.) you need bigger (area of) cost-saving, than replacement cost </li>
+        <li>We'll cover this in more detail in other articles</li>
+      </ul>
+  </ul>
+</p>]]></description>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/replacement-cost-in-detail</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/replacement-cost-in-detail</guid>
+    </item>
+    
+    
+    <item>
+      <title>New Framework, Library? Think of the Balance between Cost-Saving and Replacement-Cost Effects</title>
+      <description><![CDATA[<h2>Syndrome - "That software out there resolves my issue"</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-replace.png">
   <figcaption>
     Images by <a href="http://www.freedigitalphotos.net/images/abandoned-old-house-photo-p290063">Witthaya Phonsawat</a>
     and <a href="http://www.freedigitalphotos.net/images/exterior-shot-of-a-glass-building-photo-p258343">stockimages</a>
@@ -29,7 +330,7 @@
 <p>
   You might be thinking like:
   <ul>
-    <li>Spring MVC sucks => why not Scala Play framework?</li>
+    <li>Spring MVC sucks => why not use Scala Play framework?</li>
     <li>jQuery makes a mess => Angular or even React would be a rescue?</li>
     <li>Terrible backend performance => let's introduce async, non-blocking frameworks</li>
     <li>Why still CVS in 2016!? => let's do Git!</li>
@@ -39,7 +340,7 @@
 
 <p>
   It is pretty important developers keep up to the current state of modern technologies, tools,
-  what technical challenges they are trying to resolve.
+  and what technical challenges they are trying to resolve.
   And yes, they would resolve some of your problems for sure.
 </p>
 
@@ -52,26 +353,26 @@
 <h2>Replacement cost matters, even if you know the after-replacement world is a peace</h2>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-replacement-seesaw">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-seesaw">
 </figure>
 
 <blockquote>If we use a framework X, then the maintenance burden would be 1/2!</blockquote>
 
 <p>
   is probably right, but missing replacement cost.
-  End-to-end state comparison, (i.e):
+  End-to-end state comparison, is not enough. (i.e) You need think about not only:
   <ul>
     <li>"current situation" vs</li>
     <li>"after replacement is done"</li>
   </ul>
-  is not enough. You also have to think about replacement cost, too:
+  but also replacement cost:
   <ul>
     <li>learning curve</li>
     <li>initial-phase issues</li>
-    <li>retirement work for the existing software</li>
+    <li>retirement and remediation work for the existing software</li>
     <li>etc...</li>
   </ul>
-  Some of them is what "Technical Debt" discussion covers.
+  By the way, the 3rd point, retirement and remediation work is what "Technical Debt" discussion covers.
 </p>
 
 <p>
@@ -82,10 +383,11 @@
 <h2>Right comparison, to achieve better Tech environment</h2>
 <p>
   I am going to cover this comparison in more detail, in a series of articles.
-  The purpose is to give sounding economic rationale, to "<strong>achieve</strong>" better Technology environment and stack by replacement,
-  <strong>NOT </strong> just to give enough reasons to deny the idea of replacement.
+  The purpose is <strong>NOT </strong> just to give enough reasons to deny the idea of replacement.
+  It is more to give sounding economic rationale, to "<strong>achieve</strong>" better Technology environment by replacement,
+
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/end-to-end-state-comparison-not-complete</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/end-to-end-state-comparison-not-complete</guid>
     </item>
@@ -121,7 +423,7 @@
   <figcaption>
     <span style="font-size: 20px"><strong>Fig 1. Selling Futures contract</strong></span>
   </figcaption>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-futures.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-derivative-futures.png">
   <figcaption>
     <a href="http://www.freedigitalphotos.net/images/Manufacturing_and_in_g199-Barrel_p11860.html">(Image by Suat Eman at FreeDigitalPhotos.net)</a>
   </figcaption>
@@ -136,7 +438,7 @@
   <figcaption>
     <span style="font-size: 20px"><strong>Fig 2. Buying Oil</strong></span>
   </figcaption>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-underlier.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-derivative-underlier.png">
   <figcaption><a href="http://www.freedigitalphotos.net/images/Manufacturing_and_in_g199-Barrel_p11860.html">Image by Suat Eman at FreeDigitalPhotos.net</a></figcaption>
 </figure>
 
@@ -148,7 +450,7 @@
   <figcaption>
     <span style="font-size: 20px"><strong>Fig 3. Borrowing money to buy oil</strong></span>
   </figcaption>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-borrow.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-derivative-borrow.png">
   <figcaption><a href="http://www.freedigitalphotos.net/images/Manufacturing_and_in_g199-Barrel_p11860.html">Image by Suat Eman at FreeDigitalPhotos.ne</a></figcaption>
 </figure>
 
@@ -174,7 +476,7 @@
 </p>
 
 <figure>
-  <a href="https://en.wikipedia.org/wiki/Power_reverse_dual-currency_note"><img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/Derivatives_PRDC.png"></a>
+  <a href="https://en.wikipedia.org/wiki/Power_reverse_dual-currency_note"><img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/Derivatives_PRDC.png"></a>
   <figcaption>
     <a href="https://en.wikipedia.org/wiki/Power_reverse_dual-currency_note">PRDC structure by Wikipedia</a>
   </figcaption>
@@ -204,7 +506,7 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-2-tier.png"></a>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-derivative-2-tier.png"></a>
   <figcaption>
     <a href="https://en.wikipedia.org/wiki/Power_reverse_dual-currency_note">PRDC structure by Wikipedia</a>
   </figcaption>
@@ -235,7 +537,7 @@
 <p>
   We will dig in further into this software pricing method in other articles.
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</guid>
     </item>
@@ -245,7 +547,7 @@
       <title>Software as a complex derivative contract</title>
       <description><![CDATA[
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-complex-derivative2.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-complex-derivative2.png">
   <figcaption>
     Images by <a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">sheelamohan</a>
     and <a href="http://www.freedigitalphotos.net/images/interconnected-network-structure-shows-networking-photo-p206671">Stuart Miles</a>
@@ -261,7 +563,7 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-unpredictable-revenues.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-derivative-unpredictable-revenues.png">
   <figcaption><a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">Image by stockimages at FreeDigitalPhotos.net</a></figcaption>
 </figure>
 
@@ -325,12 +627,12 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-derivative-unpredictable-cost.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-derivative-unpredictable-cost.png">
   <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Worried_Businessman_With_Pc_p67341.html">Image by David Castillo Dominici at FreeDigitalPhotos.net</a></figcaption>
 </figure>
 
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</guid>
     </item>
@@ -349,7 +651,7 @@
 
 <h2>Selling the company - the only pure form of sell</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-m_and_a.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-m_and_a.png">
 </figure>
 <p>
   This is the only pure for of selling, although you are not selling the software only but the entire business, company.
@@ -357,7 +659,7 @@
 
 <h2>Retire the software</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-retire.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-retire.png">
   <figcaption>
     Image by <a href="http://www.freedigitalphotos.net/images/Construction_g265-Pull_Down_Constuction_p56850.html">Surachai</a> at FreeDigitalPhotos.net
   </figcaption>
@@ -377,7 +679,7 @@
 
 <h2>Replace the software you are using, with a new one</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-replace.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-replace.png">
   <figcaption>
     Images by <a href="http://www.freedigitalphotos.net/images/abandoned-old-house-photo-p290063">Witthaya Phonsawat</a>
     and <a href="http://www.freedigitalphotos.net/images/exterior-shot-of-a-glass-building-photo-p258343">stockimages</a>
@@ -410,7 +712,7 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-selling-setup-competitor.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-setup-competitor.png">
   <figcaption>
     Image by <a href="http://www.freedigitalphotos.net/images/cloud-service-photo-p389883">zirconicusso</a> at FreeDigitalPhotos.net
   </figcaption>
@@ -424,7 +726,7 @@
 <p>
   So, you are not actually selling anything, but taking advantage of mis-priced (too high maintenance cost) of the software your rival had.
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-selling</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-selling</guid>
     </item>
@@ -434,7 +736,7 @@
       <title>Pricing Software in Financial Arbitrage Context - Forms of buying software</title>
       <description><![CDATA[<h2>Buying a software package</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-package.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-package.png">
 </figure>
 <p>
   If you can find a software package that perfectly fits your needs, you can buy and install it to run your business.
@@ -444,7 +746,7 @@
 
 <h2>Buying a company as a whole - M&A</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-m_and_a.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-m_and_a.png">
 </figure>
 
 <p>
@@ -453,7 +755,7 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-you-buy-everything.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-you-buy-everything.png">
   <figcaption>
     Image by <a href="http://www.freedigitalphotos.net/images/cloud-service-photo-p389883">zirconicusso</a> at FreeDigitalPhotos.net
   </figcaption>
@@ -461,7 +763,7 @@
 
 <h2>Invest in a software project</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-build.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-build.png">
 </figure>
 
 <p>
@@ -476,7 +778,7 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-oss.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-oss.png">
 </figure>
 
 <h2>Outsource software development</h2>
@@ -489,7 +791,7 @@
 
 <h2>Cloud Subscription</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-buying-cloud.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-cloud.png">
   <figcaption>
     Images by <a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">stockimages</a>
     and <a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">renjith krishnan</a>
@@ -509,7 +811,7 @@
   manage issues, etc. Also GitHub's WebHook can call other services, even other cloud services like CircleCI or Jenkins build processes
   to automate the software build procedure.
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-buying</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-buying</guid>
     </item>
@@ -550,7 +852,7 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-youcant-sell.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-youcant-sell.png">
   <figcaption><a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">Image by stockimages at FreeDigitalPhotos.net</a></figcaption>
 </figure>
 
@@ -561,7 +863,7 @@
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-you-buy-everything.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-you-buy-everything.png">
   <figcaption>
     Images by <a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">stockimages</a>
     and <a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">renjith krishnan</a>
@@ -588,7 +890,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <h2>Pricing Software, by assuming it as a complex Financial Derivative contract</h2>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/arbitrage-software-complex-derivative2.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-complex-derivative2.png">
   <figcaption>
     Images by <a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">sheelamohan</a>
     and <a href="http://www.freedigitalphotos.net/images/interconnected-network-structure-shows-networking-photo-p206671">Stuart Miles</a>
@@ -636,7 +938,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   In future articles, we model software as a complex derivative contract with unknown cash flows,
   and we will see how that enables the arbitrage argument to give a price of software.
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-intro</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-intro</guid>
     </item>
@@ -657,7 +959,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   which people usually say "trends change every half a year". Web front-end programmers are doing pretty good job
   trying to resolve problems which many other people face, in this rapid moving environment.
   <figure>
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/wordcloud.svg">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/wordcloud.svg">
   </figure>
 </p>
 
@@ -667,7 +969,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   strict but active code review process, issues and enhancement requests are tracked in one place, building process is becoming more and more automated.
 
   <figure>
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/wordcloud2.svg">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/wordcloud2.svg">
   </figure>
 </p>
 
@@ -727,7 +1029,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
   <figure>
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/software-engineering-2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-engineering-2.png">
   </figure>
 
 <p>
@@ -741,7 +1043,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   I am excited to introduce methodologies, and more excited to hear about suggestions and critiques from others, to build this framework better and more robust!
 </p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</guid>
     </item>
@@ -790,7 +1092,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/journals-of-systems-and-software</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/journals-of-systems-and-software</guid>
     </item>
@@ -821,7 +1123,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   And as the time goes by, the debt amount decreases.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-debt-financial-debt.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-debt-financial-debt.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Money_g61-Stacked_US_Dollar_p66613.html">Image by sheelamohan at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </p>
@@ -830,7 +1132,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Also another important property is that usually it is straightforward to derive the periodic payment amount,
   from the debt amount for Financial Debt.
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-bond.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/income-bond.png">
   </figure>
 </p>
 
@@ -842,7 +1144,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   you don't need to pay back Technical Debt.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-debt-technical-debt.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-debt-technical-debt.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Worried_Businessman_With_Pc_p67341.html">Image by David Castillo Dominici at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 
@@ -863,7 +1165,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <p>
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-debt-technical-debt-model.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-debt-technical-debt-model.png">
     <figcaption>
       Images by
       <a href="http://www.freedigitalphotos.net/images/Education_g314-Mathematical_Background_p86649.html">Janaka Dharmasena</a>
@@ -879,7 +1181,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </figure>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</guid>
     </item>
@@ -893,7 +1195,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   When you purchased a packaged software product, it is easy to tell the asset value of the software.
   That is just the purchase price (and if necessary, you apply <a hre="https://en.wikipedia.org/wiki/Depreciation">"depreciation"</a> accounting).
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-asset-package.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-asset-package.png">
   </figure>
 </p>
 
@@ -901,7 +1203,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   On the other hand, it becomes difficult when you try to evaluate the software you developed internally in your company.
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-asset-internal.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-asset-internal.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">Image by renjith krishnan at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </p>
@@ -910,7 +1212,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   One possible approach is to calculate <a href="http://www.investopedia.com/terms/d/dcf.asp">"Discounted Cash Flow"</a> which is generated from your software.
   In this case, the cashflow is the revenue generated from the software.
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-asset-cashflow.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-asset-cashflow.png">
   </figure>
 </p>
 
@@ -918,7 +1220,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   However, that is not almost always impossible. As we saw in the <a href="pricing-and-accounting-software-income">previous article</a>,
   it is not your software which generates the revenue, but your entire business generates the cashflow.
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-software.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/income-software.png">
   </figure>
 </p>
 
@@ -932,7 +1234,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
   So, no one buys your software ... then its price must be zero?
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</guid>
     </item>
@@ -942,14 +1244,14 @@ They just didn't buy software only, but they bought the entire businesses and th
       <title>Pricing and Accounting Software - Income</title>
       <description><![CDATA[
 <figure style="text-align:center">
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/income.png">
 </figure>
 
 <h2>Income from software - illustrated by the single-app E-Commerce company</h2>
 <p>
   Like my previous articles, let's continue the discussion about the same single-app E-commerce company, to make the argument simple.
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-e-sales.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/income-e-sales.png">
   </figure>
 </p>
 
@@ -961,7 +1263,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   Then, it would feel natural and easy to associate all the revenue to "e-Sales". However...
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-revenue.jpg" style="max-width:100%; height:auto">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/income-revenue.jpg" style="max-width:100%; height:auto">
     <figcaption><a href="http://www.freedigitalphotos.net/images/business-graph-with-dollar-sign-photo-p391087">Image by dream designs at FreeDigitalPhotos.net</a></figcaption>
   </figure></p>
 </p>
@@ -978,7 +1280,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
 <figure style="text-align:center">
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-bond.png" style="max-width:100%; height:auto">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/income-bond.png" style="max-width:100%; height:auto">
 </figure></p>
 
 <p>
@@ -987,7 +1289,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
 <figure style="text-align:center">
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/income-software.png" style="max-width:100%; height:auto">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/income-software.png" style="max-width:100%; height:auto">
 </figure></p>
 
 <p>
@@ -1000,7 +1302,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore more about revenue change and software relationship in future articles.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
     </item>
@@ -1025,7 +1327,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   So, the detailed report looks like this.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/rescuetime-3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/rescuetime-3.png">
   </figure>
 
 </p>
@@ -1036,13 +1338,13 @@ They just didn't buy software only, but they bought the entire businesses and th
   until you move focus to another application.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/rescuetime-1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/rescuetime-1.png">
   </figure>
 
   For web browsers, RescueTime can give more detailed tracking, by each web page.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/rescuetime-2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/rescuetime-2.png">
   </figure>
 
   The collected time usage data is sent to RescueTime's cloud, and aggregated to show the report like shown at the top of this article.
@@ -1068,7 +1370,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore the possibilities of leveraging such metrics in later blog posts.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
     </item>
@@ -1082,7 +1384,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense.png">
   </figure>
 </p>
 
@@ -1098,7 +1400,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   To avoid complexity, I use a very simple setup here to illustrate how it works.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense-esale1.png">
   </figure>
 
   Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
@@ -1110,7 +1412,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense-esale2.png">
   </figure>
 </p>
 
@@ -1118,7 +1420,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense-esale3.png">
   </figure>
 </p>
 
@@ -1150,7 +1452,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
     </item>
@@ -1164,7 +1466,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   In this article, I'll explain the bottom left component in the below picture, how to calculate the expenses of your software.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense.png">
   </figure>
 </p>
 
@@ -1180,7 +1482,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   To avoid complexity, I use a very simple setup here to illustrate how it works.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense-esale1.png">
   </figure>
 
   Let's assume there is an E-commerce company whose business is solely run on their single web software application, "e-Sales".
@@ -1192,7 +1494,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   For the rest of the time other than e-Sales support, they might be e-maling, attending meetings, etc.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense-esale2.png">
   </figure>
 </p>
 
@@ -1200,7 +1502,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   What's the salary of each developer monthly? that could be like below, then the monthly maintenance cost of the e-sales software is:
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting-expense-esale3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting-expense-esale3.png">
   </figure>
 </p>
 
@@ -1232,7 +1534,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
     </item>
@@ -1252,13 +1554,13 @@ They just didn't buy software only, but they bought the entire businesses and th
   it is to preserve the original behavior of the software, but still make it better designed.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/refactoring1.png">
   </figure>
 
   So, essentially the Technical Debt will be reduced without having to reduce software's value.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring2.png" style="max-width:100%; height:auto;;">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/refactoring2.png" style="max-width:100%; height:auto;;">
   </figure>
 
   As the Technical Debt was decreased, the software becomes easier to maintain, less error prone, and the mainteance cost will be saved.
@@ -1271,13 +1573,13 @@ They just didn't buy software only, but they bought the entire businesses and th
   For example, you introduced unexpected bugs, or you chose wrong design or implementation so that it actually becomes difficult to maintain and change the code going forward.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/refactoring3.png">
   </figure>
 
   In such a case, total Technical Debt of the software is increased,
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/refactoring4.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/refactoring4.png">
   </figure>
 
   And thus the maintenance cost is also increased. It is analogous to increase in Financial Debt causing increase in debt charge too.
@@ -1298,7 +1600,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
     </item>
@@ -1313,7 +1615,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   explained how to treat software and technical debt in terms of Financial Accounting.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting5.1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting5.1.png">
   </figure>
 
   In this article, let me try explaining how enhancement (e.g. adding a new feature to software) affects this balance.
@@ -1324,7 +1626,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Software enhancement is made for benefits, but that's only one side of the story.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting8.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting8.png">
   </figure>
 
   When making an enhancement, you are most likely adding new lines of code. And as in the previous post, any single line of code is Technical Debt.
@@ -1338,7 +1640,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <p>
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting9.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting9.png">
   </figure>
 
   However, making enhancement also increases the value of your software, as it performs better or supports more features.
@@ -1350,13 +1652,13 @@ They just didn't buy software only, but they bought the entire businesses and th
   On the other hand, if you do a bad enhancement, you will increase the Technical Debt a lot more. Typically you add buggy code and that causes a lot of troubles afterwards.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting10.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting10.png">
   </figure>
 
   In such a case, you need to pay more maintenance cost and the benefit from the enhancement is diminished.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting11.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting11.png">
   </figure>
 </p>
 
@@ -1375,7 +1677,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
     </item>
@@ -1389,21 +1691,21 @@ They just didn't buy software only, but they bought the entire businesses and th
   Disclaimer - the pictures used in this post are not as strict and accurate as the U.S. and most other countries' accounting standars require, but still serve as illustration of basic concepts.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting1.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting1.png">
     <figcaption>Figure 1. Asset (Cash) and Liability (Debt) are balanced</figcaption>
   </figure>
 
   Firstly, when you borrow, (e.g.) $1,000 from someone, you get $1,000 cash on the asset side, and $1,000 on the debt side in your accounting.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting2.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting2.png">
     <figcaption>Figure 1. You pay back $100 of the debt</figcaption>
   </figure>
 
   Afterwards, you pay back part of the debt, $100.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting3.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting3.png">
     <figcaption>Figure 3. Charge for the debt</figcaption>
   </figure>
 
@@ -1412,7 +1714,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Of course, if you borrow $1,000, you don't just save it in your account. You borrowed the money to invest in something else, hopefully earning more than the charge of the debt.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting4.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting4.png">
     <figcaption>Figure 4. You borrowed cash for investment</figcaption>
   </figure>
 
@@ -1449,21 +1751,21 @@ They just didn't buy software only, but they bought the entire businesses and th
   You can look at <a href="http://c2.com/cgi/wiki?WardExplainsDebtMetaphor">"Ward (Cunningham) Explains Debt Metaphor"</a> to see why and how software is referred as debt.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting5.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting5.png">
     <figcaption>Figure 5. As long as you have software, there is always Technical Debt</figcaption>
   </figure>
 
   Like in Finance, you pile up Technical Debt to create or purchase software asset.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting6.png" style="max-width:100%; height:autox;">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting6.png" style="max-width:100%; height:autox;">
     <figcaption>Figure 6. Technical Debt causes maintenance cost</figcaption>
   </figure>
 
   Technical debt causes cost in maintenance. as financial debt causes debt charge. One interesting thing about Technical Debt is you might end up only paying maintenance cost, without paying back the debt.
 
   <figure style="text-align:center">
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/accounting7.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/accounting7.png">
     <figcaption>Figure 7. Software generates benefit, that is why it can be accounted as an asset</figcaption>
   </figure>
 
@@ -1489,7 +1791,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
 </p>]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
     </item>
@@ -1556,7 +1858,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>The below is a figure from the paper, showing the results of 5,000 Monte Carlo simulations of the entire project.</p>
 
 <figure style="text-align:center">
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/monte-carlo.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/monte-carlo.png">
 </figure>
 
 <h2>What are the benefits, and challenges?</h2>
@@ -1575,7 +1877,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <p>However, this is still an informative paper providing probabilistic view on software project management.</p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
     </item>
@@ -1586,7 +1888,7 @@ They just didn't buy software only, but they bought the entire businesses and th
       <description><![CDATA[<h2>You can never tell when your Software Project will be finished</h2>
 
 <figure style="text-align:center">
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/ID-10098216.jpg">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/ID-10098216.jpg">
   <figcaption><a href="http://www.freedigitalphotos.net/images/Ideas_and_decision_m_g409-Figure_With_Red_Question_Mark_p98216.html">Image by Master isolated images at FreeDigitalPhotos.net</a></figcaption>
 </figure>
 
@@ -1605,7 +1907,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>For example, you may be using legacy and well-known technologies in one of the projects, and you can give more accurate estimate on project's completion. The other project might involve newer technologies you are not familiar with. In such a case, the former project has less risk. The latter has more risk.</p>
 
 <figure style="text-align:center">
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/risk.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/risk.png">
 </figure>
 
 <p>So, a riskier project <strong>doesn't necessarily</strong> mean a longer project. If project's completion is <strong>less predictable</strong>, the project is <strong>riskier</strong>.</p>
@@ -1638,7 +1940,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
     </item>
@@ -1652,7 +1954,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <div style="text-align:center">
   <figure>
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/ID-10056727.jpg">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/ID-10056727.jpg">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </div>
@@ -1725,7 +2027,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <div style="text-align:center">
   <figure>
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/questions.jpg">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/questions.jpg">
     <figcaption><a href="http://www.freedigitalphotos.net/images/question-mark-on-cubes-shows-uncertainty-photo-p175169">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </div>
@@ -1745,7 +2047,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <div style="text-align:center">
   <figure>
-    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/v1453650265/blog/images/posts/uncertainty.png">
+    <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/uncertainty.png">
     <figcaption><a href="http://www.freedigitalphotos.net/images/Business_people_g201-Employee_Reading_Documents_p56727.html">Image by Stuart Miles at FreeDigitalPhotos.net</a></figcaption>
   </figure>
 </div>
@@ -1755,7 +2057,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Let's enter in the frameworks and in the field from the next article in the series.
 </p>
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
     </item>
@@ -1769,7 +2071,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Sat Jan 30 2016 18:44:43 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/about</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
     </item>

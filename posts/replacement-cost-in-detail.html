@@ -3,7 +3,7 @@
   <head lang="en">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="When replacing legacy software with new one, for cost saving purposes, you need to think about replacement cost as well. And comparison cannot be solid as it is probabilistic.">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
-    <meta property="og:title" content="Pricing Software in Financial Arbitrage Context - Forms of selling software">
+    <meta property="og:title" content="Software Replacement: Comparison between Cost-Saving and Replacement-Cost Effects">
 <meta property="og:type" content="blog">
 
 
@@ -29,10 +29,10 @@
   
 
 
-<meta property="og:url" content="http://richard-imaoka.github.io/posts/arbitrage-software-selling.html">
+<meta property="og:url" content="http://richard-imaoka.github.io/posts/replacement-cost-in-detail.html">
 <meta property="og:image" content="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-engineering-2.png">
 <meta property="og:site_name" content="Quantitative Software Engineering by Richard Imaoka">
-<meta property="og:description" content="">
+<meta property="og:description" content="When replacing legacy software with new one, for cost saving purposes, you need to think about replacement cost as well. And comparison cannot be solid as it is probabilistic.">
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ImaokaE" />
@@ -77,93 +77,81 @@
             <div class="blog-item">
               <div class="row">
                 <div class="col-xs-12 col-sm-12 blog-content">
-                  <h1>Pricing Software in Financial Arbitrage Context - Forms of selling software</h1>
-                  <p></p>
-                  <h2>Selling software is nearly impossible</h2>
-
-<p>
-  As in <a href="arbitrage-software-intro.html">Pricing Software in Financial Arbitrage Context - Intro</a>,
-  you cannot sell your software other than the below M&A case where you ser selling your entire company.
-
-  This makes it very hard to construct an arbitrage argument.
-</p>
-
-<h2>Selling the company - the only pure form of sell</h2>
+                  <h1>Software Replacement: Comparison between Cost-Saving and Replacement-Cost Effects</h1>
+                  <p>When replacing legacy software with new one, for cost saving purposes, you need to think about replacement cost as well. And comparison cannot be solid as it is probabilistic.</p>
+                  <h2>Balance between cost-saving and replacement cost</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-m_and_a.png">
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-seesaw.png">
 </figure>
-<p>
-  This is the only pure for of selling, although you are not selling the software only but the entire business, company.
-</p>
+As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-complete.html">previous article</a>, "current state" vs. "after replacement done" comparison, is not complete. You need to think about cost saving vs replacement.
 
-<h2>Retire the software</h2>
+<h2>Chart of cost and effort throughout the replacement</h2>
+<p>So, a typical system replacement project might look like this, in terms of developer's effort over time.</p>
+
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-retire.png">
-  <figcaption>
-    Image by <a href="http://www.freedigitalphotos.net/images/Construction_g265-Pull_Down_Constuction_p56850.html">Surachai</a> at FreeDigitalPhotos.net
-  </figcaption>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-diagram1.png">
 </figure>
+
+<ul>
+  <li>Development phase</li>
+    <ul>
+      <li>While developing the new software, the legacy software is still used</li>
+    </ul>
+  <li>New software rolled out</li>
+    <ul>
+      <li>There could be a spike of issues, right after roll out</li>
+      <li>Legacy software is run in parallel with minimal maintenance, then retired afterwards</li>
+    </ul>
+  <li>Stable phase</li>
+    <ul>
+      <li>After the new software completely released the legacy one, it is expected to run in a lower cost</li>
+    </ul>
+</ul>
+
+<h2>Comparison on the chart</h2>
 <p>
-  For some cases, you probably want to just stop using and maintaining your software.
-  When you are retiring the software, you can assume you are <strong>selling it at zero</strong> price, and getting rid of maintenance and investment.
-  Of course revenues generated from the software will also be gone.
+  Adding up the new and legacy software development + maintenance cost, the chart looks like this.
 </p>
-
-<p>
-  Chances are like you stop doing unprofitable business, and then the underlying software is no longer needed.
-
-  You might make this retirement decision when maintenance cost is higher than the revenue it generates.
-</p>
-
-
-<h2>Replace the software you are using, with a new one</h2>
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-replace.png">
-  <figcaption>
-    Images by <a href="http://www.freedigitalphotos.net/images/abandoned-old-house-photo-p290063">Witthaya Phonsawat</a>
-    and <a href="http://www.freedigitalphotos.net/images/exterior-shot-of-a-glass-building-photo-p258343">stockimages</a>
-    at FreeDigitalPhotos.net
-  </figcaption>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-diagram2.png">
 </figure>
 
 <p>
-  A more common case than pure retirement is replacing the current software with a newly built one.
-  Possibly you are only replacing part of your entire software system, like replacing the middleware layer for better scalability etc.
-</p>
-
-<p>
-  This is actually a difficult investment decision, than most people think of.
-  The new software does not generate any revenue during the development phase, until it actually replaces the old one.
-  Also once the new software runs in production, it has much higher possibility of unknown bugs and issues.
-</p>
-
-<h2>Special case - set up a competitor company</h2>
-<p>
-  This is a special case which you are not actually selling software even at the zero price.
-</p>
-
-<p>
-  When you notice a certain company, has a very high maintenance cost in their software,
-  you can set up a new company running a competing service with them.
-
-  Supposedly you have much lower maintenance cost in your own software, so that you can
-  provide more attractive prices offering the similar service.
+  So, the replacement cost is additional cost you pay, compared to the legacy system maintenance cost.
+  And the cost-saving effect is the difference between the new and legacy systems, over time.
 </p>
 
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-setup-competitor.png">
-  <figcaption>
-    Image by <a href="http://www.freedigitalphotos.net/images/cloud-service-photo-p389883">zirconicusso</a> at FreeDigitalPhotos.net
-  </figcaption>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-replacement-diagram3.png">
 </figure>
 
 <p>
-  From the selling and buying discussion perspective, it is 1) buying (investing in) your own software which is similar to the rival company,
-  2) and then take take the revenue out of your rival.
+  If the cost-saving effect (i.e. the blue area) is bigger than the replacement cost (i.e. the pink area),
+  the replacement was successful. Note that the blue area continues to exist over a long period of time,
+  than what is shown in the the above chart.
+</p>
+
+<h2>You have to 1) think about probability, and 2) recognize immediate cost is more weighed than cost in the future</h2>
+
+<p>
+  Say, 3 years later, you get huge accumulated cost-saving effect, and as the new software is usually run for a long period of time.
+  Great, so do we always better replace legacy high-maintenance software to newer software? Even though there is replacement cost,
+  since cost-saving in long run pays it off, most likely we just better doing replacement?
 </p>
 
 <p>
-  So, you are not actually selling anything, but taking advantage of mis-priced (too high maintenance cost) of the software your rival had.
+  Not actually. You need to consider:
+  <ul>
+    <li>Replacement cost is probabilistic, (e.g.) the development might take longer than you expected</li>
+    <li>Cost-saving effect is also probabilistic (e.g.) new software might be of higher maintenance</li>
+    <li>Time Value of money</li>
+      <ul>
+        <li>In economics, <strong>current</strong> cost is <strong>weighed more</strong> than cost in the future</li>
+        <li>So, replacement cost in near future, is weighed more than cost-saving effect afterwards, even though it saves cost for a longer period</li>
+        <li>(i.e.) you need bigger (area of) cost-saving, than replacement cost </li>
+        <li>We'll cover this in more detail in other articles</li>
+      </ul>
+  </ul>
 </p>
                   
                   <div id="disqus_thread"></div>

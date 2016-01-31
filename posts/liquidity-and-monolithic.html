@@ -3,7 +3,7 @@
   <head lang="en">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="As in the previous article, software is an illiquid asset and its replacement cost tends to be very high. However, there is a way to recude replacement cost. Since the high cost is coming from liquidity, if you make the software more liquid,  (i.e.) easier to get rid of or create, it can be a cost saving opportunity.">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/font-awesome.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
-    <meta property="og:title" content="Pricing Software in Financial Arbitrage Context - Forms of selling software">
+    <meta property="og:title" content="Software Liquidity and Monolithic Spread">
 <meta property="og:type" content="blog">
 
 
@@ -29,10 +29,10 @@
   
 
 
-<meta property="og:url" content="http://richard-imaoka.github.io/posts/arbitrage-software-selling.html">
+<meta property="og:url" content="http://richard-imaoka.github.io/posts/liquidity-and-monolithic.html">
 <meta property="og:image" content="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/software-engineering-2.png">
 <meta property="og:site_name" content="Quantitative Software Engineering by Richard Imaoka">
-<meta property="og:description" content="">
+<meta property="og:description" content="As in the previous article, software is an illiquid asset and its replacement cost tends to be very high. However, there is a way to recude replacement cost. Since the high cost is coming from liquidity, if you make the software more liquid,  (i.e.) easier to get rid of or create, it can be a cost saving opportunity.">
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ImaokaE" />
@@ -77,93 +77,55 @@
             <div class="blog-item">
               <div class="row">
                 <div class="col-xs-12 col-sm-12 blog-content">
-                  <h1>Pricing Software in Financial Arbitrage Context - Forms of selling software</h1>
-                  <p></p>
-                  <h2>Selling software is nearly impossible</h2>
+                  <h1>Software Liquidity and Monolithic Spread</h1>
+                  <p>As in the previous article, software is an illiquid asset and its replacement cost tends to be very high. However, there is a way to recude replacement cost. Since the high cost is coming from liquidity, if you make the software more liquid,  (i.e.) easier to get rid of or create, it can be a cost saving opportunity.</p>
+                  <h2>Replacing a huge, monolithic software system is more expensive than replacing small-pieced system</h2>
 
 <p>
-  As in <a href="arbitrage-software-intro.html">Pricing Software in Financial Arbitrage Context - Intro</a>,
-  you cannot sell your software other than the below M&A case where you ser selling your entire company.
-
-  This makes it very hard to construct an arbitrage argument.
+  Let's assume you have a huge monolithic system and its replacement cost to a newer system is represented as follows.
 </p>
-
-<h2>Selling the company - the only pure form of sell</h2>
-<figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-m_and_a.png">
-</figure>
-<p>
-  This is the only pure for of selling, although you are not selling the software only but the entire business, company.
-</p>
-
-<h2>Retire the software</h2>
-<figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-retire.png">
-  <figcaption>
-    Image by <a href="http://www.freedigitalphotos.net/images/Construction_g265-Pull_Down_Constuction_p56850.html">Surachai</a> at FreeDigitalPhotos.net
-  </figcaption>
-</figure>
-<p>
-  For some cases, you probably want to just stop using and maintaining your software.
-  When you are retiring the software, you can assume you are <strong>selling it at zero</strong> price, and getting rid of maintenance and investment.
-  Of course revenues generated from the software will also be gone.
-</p>
-
-<p>
-  Chances are like you stop doing unprofitable business, and then the underlying software is no longer needed.
-
-  You might make this retirement decision when maintenance cost is higher than the revenue it generates.
-</p>
-
-
-<h2>Replace the software you are using, with a new one</h2>
-<figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-replace.png">
-  <figcaption>
-    Images by <a href="http://www.freedigitalphotos.net/images/abandoned-old-house-photo-p290063">Witthaya Phonsawat</a>
-    and <a href="http://www.freedigitalphotos.net/images/exterior-shot-of-a-glass-building-photo-p258343">stockimages</a>
-    at FreeDigitalPhotos.net
-  </figcaption>
+  <figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-monolithic.png">
 </figure>
 
 <p>
-  A more common case than pure retirement is replacing the current software with a newly built one.
-  Possibly you are only replacing part of your entire software system, like replacing the middleware layer for better scalability etc.
+  If you split up the monolithic system into smaller components,
 </p>
-
-<p>
-  This is actually a difficult investment decision, than most people think of.
-  The new software does not generate any revenue during the development phase, until it actually replaces the old one.
-  Also once the new software runs in production, it has much higher possibility of unknown bugs and issues.
-</p>
-
-<h2>Special case - set up a competitor company</h2>
-<p>
-  This is a special case which you are not actually selling software even at the zero price.
-</p>
-
-<p>
-  When you notice a certain company, has a very high maintenance cost in their software,
-  you can set up a new company running a competing service with them.
-
-  Supposedly you have much lower maintenance cost in your own software, so that you can
-  provide more attractive prices offering the similar service.
-</p>
-
 <figure>
-  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-selling-setup-competitor.png">
-  <figcaption>
-    Image by <a href="http://www.freedigitalphotos.net/images/cloud-service-photo-p389883">zirconicusso</a> at FreeDigitalPhotos.net
-  </figcaption>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-split.png">
 </figure>
 
 <p>
-  From the selling and buying discussion perspective, it is 1) buying (investing in) your own software which is similar to the rival company,
-  2) and then take take the revenue out of your rival.
+  Then you would be able to replace each component individually. And each of them has its own replacement cost.
+</p>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-small.png">
+</figure>
+
+<p>
+  Comparing the sum of small-component replacement and monolithic replacement, it tends to be that the replacement of the monolithic system is more expensive.
+  Let's call this as "Monolithic Spread" - this is the cost you are paying for your monolithic (i.e.) illiquid, harder-to-replace system.
+
+  It can be explained that smaller piece of the system is easier to replace, thus lower cost.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-spread.png">
+</figure>
+
+<h2>Monolithic spread matters on replacement, but there is an opposite effect on maintenance cost</h2>
+<p>
+  Thinking about replacement, it feels like your system should always be split up into smaller pieces so that each component can be
+  easily replaced by newer technology.
 </p>
 
 <p>
-  So, you are not actually selling anything, but taking advantage of mis-priced (too high maintenance cost) of the software your rival had.
+  However, there is a known counter effect talking about maintenance cost. In certain cases, dividing up a monolithic system into smaller pieces
+  can cause more maintenance cost. So if you have no immediate plan of software replacement, you should be careful.
+</p>
+
+<p>
+  We will cover that topic in the next article.
 </p>
                   
                   <div id="disqus_thread"></div>
