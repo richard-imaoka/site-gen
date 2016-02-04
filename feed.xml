@@ -8,6 +8,289 @@
     
     
     <item>
+      <title>You caannot Re-Sell your Software</title>
+      <description><![CDATA[<h2>Software re-sell is prohibited or impossible</h2>
+<p>
+  Buying & selling software has a <strong>unique characteristics</strong>, where you <strong>cannot re-sell</strong> your software.
+</p>
+
+<p>
+  This is mainly because:
+  <ul>
+    <li>Software is provided as a <strong>"license agreement"</strong>
+        <ul>
+          <li>(i.e.) software provider still has the (copy)rights of software</li>
+        </ul>
+    <li>Or no one wants your own custom software</li>
+</p>
+
+<h2>Buy & Sell forms and how Re-Sell is prohibited (M&A as exception)</h2>
+<p>
+  Let's look at how re-sell is prohibited or impossible in the following forms of software buy & sell transactions:
+
+  <h3>Packaged Software</h3>
+  <p>License agreement almost always prohibits re-sell to a 3rd party.</p>
+
+  <h3>Cloud Subscription</h3>
+  <p>Subscription license almost always prohibits transferring subscription to a 3rd party.</p>
+
+  <h3>Open Source Software</h3>
+  <p>Licenses allow selling it at a price, but anyway no one will buy something already free.</p>
+  <p>Exception - If you make some customization, selling a modified version makes sense though.</p>
+
+  <h3>In-House Software Development</h3>
+  <p>No one else wants your own custom software.</p>
+
+  <h3>Outsourced Software Development</h3>
+  <p>Vendor contract might prohibit re-sell, and anyway no one wants your own custom software.</p>
+
+  <h3>M&A</h3>
+  <p>This is exceptional - since you bought a company, rather than software, you can re-sell its shares.</p>
+</p>
+
+<h2>Conclusion: Impossible re-sell makes software's Microeconomics, risk management different</h2>
+<p>
+  Since re-sell of software is different, Microeconomics of software and its risk management is different from other products or Financial assets.
+</p>
+
+<p>
+  I am going to cover Microeconomics and risk management of software, leveraging Financial Engineering frameworks to quantify it, in later articles.
+</p>]]></description>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/software-resell-impossible</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-resell-impossible</guid>
+    </item>
+    
+    
+    <item>
+      <title>Software Development and M&A, long-term investment in software</title>
+      <description><![CDATA[<p>
+  Continued from the <a href="software-buy-sell">previous article</a>, let's look into other forms of buying and selling software.
+  Here are long-term investment buy & sell forms.
+</p>
+
+<h2>In-house Software Development is a long-term investment</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-build.png">
+</figure>
+<p>For your business core purposes, it is common that you cannot find any software product or cloud service which "exactly" matches what you need.</p>
+<p>It is typical for your business-core software, and you develop your business-core software within your company. Such a case is obviously a long term investment</p>
+<ul>
+  <li><strong>Buyer</strong>: company's business users</li>
+  <li><strong>Seller</strong>: same company's developer team</li>
+</ul>
+
+<h2>Software Development is also possible by asking external software vendors</h2>
+<p>
+  Similar to the above self-development case, you can ask a software vendor, like Accenture,
+  to build the software product/system for you.
+</p>
+<ul>
+  <li><strong>Buyer</strong>: company</li>
+  <li><strong>Seller</strong>: software vendor</li>
+</ul>
+
+<h2>M&A, although it is not buying software only but the business as a whole</h2>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-m_and_a.png">
+</figure>
+<p>
+  Another form of long-term investment is Merger and Acquisition, M&A.
+</p>
+<p>
+  You don't do M&A to buy software, but to buy the business as a whole.
+  However, as a result, you will get target company's software asset.
+</p>
+<ul>
+  <li><strong>Buyer</strong>: external investor</li>
+  <li><strong>Seller</strong>: existing share holders</li>
+</ul>
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-you-buy-everything.png">
+  <figcaption>
+    Image by <a href="http://www.freedigitalphotos.net/images/cloud-service-photo-p389883">zirconicusso</a> at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+
+
+<h2>Long term investment, more uncertainty (i.e.) more risk</h2>
+<p>
+  As these forms are long term investment, there is more uncertainty involved (e.g.):
+  <ul>
+    <li>When the development finishes?</li>
+    <li>Does the developed software satisfies your need, has good quality?</li>
+    <li>M&A might fail - you fail to buy enough shares</li>
+    <li>Acquired company's accounting fraud</li>
+    <li>etc</li>
+  </ul>
+  In a Financial sense, <strong>uncertainty = risk</strong>. So you need to anticipate larger potential loss from such forms of long term investment.
+</p>
+
+<h2>Conclusion: Software buy & sell transactions come in different flavors</h2>
+<p>
+  Buying and selling software products can be different from buying and selling consumer goods like milk, apples, books etc.
+  You don't usually ask farmers to provider milk for you, or an author to write a book for you.
+</p>
+
+<p>
+  Only investors would do so - ask farmers and ask authors (for books, investor = publisher though) - but in the software industry, quite often we see investments are made.
+</p>
+
+<p>
+  As it is an investment, investors need to be really aware of risks inherent these buy & sell transactions.
+</p>]]></description>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/software-longerm-buy-sell</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-longerm-buy-sell</guid>
+    </item>
+    
+    
+    <item>
+      <title>Software Buy & Sell forms, Packaged Software and Cloud Subscription</title>
+      <description><![CDATA[<h2>Classification of buy & sell activities of software is important to understand market mechanism</h2>
+
+<p>
+  Sorry, I did mis-classification of software buy & sell...
+  In previous articles, I wrongly classified buying and selling forms of software.
+  <ul>
+    <li><a href="http://localhost:3000/posts/arbitrage-software-buying.html">Pricing Software in Financial Arbitrage Context - Forms of buying software</a></li>
+    <li><a href="http://localhost:3000/posts/arbitrage-software-selling.html">Pricing Software in Financial Arbitrage Context - Forms of selling software</a></li>
+  </ul>
+  They should have been simpler and more intuitive.
+</p>
+
+<p>
+  Correct understanding of buy & sell forms is important to discuss about software market mechanism - competition, efficiency, and arbitrage opportunities.
+  So, let's review them below, and in next few articles.
+</p>
+
+<h2>Buying a packaged software product</h2>
+
+<p>
+  The most intuitive form of buying a software product.
+  You purchase a physical solid package (CD, DVD), or download the package.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-package.png">
+</figure>
+
+<ul>
+  <li><strong>Buyer</strong>: who purchases software</li>
+  <li><strong>Seller</strong>: Software vendor, Agency seller</li>
+</ul>
+
+<h2>Cloud subscription</h2>
+<p>
+  Recently, it is increasingly becoming more common to subscribe to cloud-based software products.
+  The main difference between cloud subscription and package download is that the cloud-based software, software runs in the cloud, not on your PC.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-buying-cloud.png">
+  <figcaption>
+    Images by <a href="http://www.freedigitalphotos.net/images/businessman-pushing-tactile-button-photo-p310733">stockimages</a>
+    and <a href="http://www.freedigitalphotos.net/images/Teamwork_g404-Standing_People_p25253.html">renjith krishnan</a>
+    at FreeDigitalPhotos.net
+  </figcaption>
+</figure>
+
+<ul>
+  <li><strong>Buyer</strong>: subscriber</li>
+  <li><strong>Seller</strong>: cloud service provider</li>
+</ul>
+
+<h2>Open source software ... it is not actually sold though</h2>
+<p>
+  Open source software is not sold anywhere actually. As the name says, you can just use it for free.
+
+  However, to understand the market mechanism of software, you can regard Open source software as a software product sold at <strong>zero price</strong>.
+
+  <ul>
+    <li><strong>Buyer</strong>: Open source software user</li>
+    <li><strong>Seller</strong>: Open source software community</li>
+  </ul>
+</p>
+
+<h2>Conclusion - again the classification is to correctly understand the market mechanism of software</h2>
+<p>
+  These probably looked pretty obvious, no need for discussion?
+  Maybe, but correct classification of buy & sell is important to understand the market mechanism.
+</p>
+
+<p>
+  With correct understanding of the software market mechanism, we can quantify the economic impact of software-related activities, and apply Financial Engineering theories for further analysis.
+</p>
+
+<p>
+  Let's discuss those topics in future articles, but for now we continue on the forms of buy sell in the next few articles.
+</p>]]></description>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/software-buy-sell</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-buy-sell</guid>
+    </item>
+    
+    
+    <item>
+      <title>Monolithic vs. Microservice trade-off, Replacement and Maintenance</title>
+      <description><![CDATA[
+<h2>Small-Component software system is easier to replace than huge monolithic system</h2>
+<p>
+  As we see in the previous article, generally a software system consisting of smaller components is easier to replace, than a monolithic system.
+  It is almost always easier to replace something smaller than bigger.
+</p>
+
+<figure>
+  <img src="http://res.cloudinary.com/dlze0abrr/image/upload/blog/images/posts/arbitrage-software-liquidity-replace-spread.png">
+</figure>
+
+<h2>However, there is a trade-off when splitting a system into smaller components</h2>
+<p>
+  So, it is likely any software system is replaced at some point, and to keep up with the speed of changing in today's market,
+  is it always a better strategy to build up a software system with fine-grained small components?
+</p>
+
+<h2>An example - Micro-Service discussion highlights this trade-off</h2>
+<p>
+  The below article by Martin Fowler exactly discussed this trade off.
+  Smaller-component systems have less productivity in everyday maintenance (i.e. higher maintenance cost) compared to a monolithic system, <strong>if the system is not too complex</strong> .
+</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">MicroservicePremium by Martin Fowler: <a href="http://t.co/ffuQrPTeJZ">http://t.co/ffuQrPTeJZ</a> Comments: <a href="https://t.co/SfcGVBtZ9A">https://t.co/SfcGVBtZ9A</a></p>&mdash; Hacker News (@HNTweets) <a href="https://twitter.com/HNTweets/status/598490389964689410">May 13, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2>Conclusion: 1) Too big, complex system -> split it, 2) not too big -> take a balance</h2>
+<p>
+  As discussed by Martin, a general strategy is:
+</p>
+
+<blockquote>"don't even consider microservices unless you have a system that's too complex to manage as a monolith"</blockquote>
+
+<p>
+  This means that if your system is a too big and complex monolith, chances are that if you split it into smaller pieces (probably in micro-service sytle),
+  you get benefit in both daily maintenance and replacement.
+</p>
+
+<p>
+  If your system is reasonably sized, but still feels like bit the size and the complexity is preventing you from necessary replacement,
+  it is a more difficult situation. You would still get a replacement cost benefit from split into smaller components, but it needs to be compared against maintenance cost change.
+</p>
+
+<p>
+  To make a decision on start splitting your system, and make the split work effective, you would need:
+  <ul>
+    <li>Cost calculation model and right metrics to validate replacement pays off</li>
+    <li>Iterative reviews to see if the replacement work still pays off</li>
+  </ul>
+</p>]]></description>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <link>http://richard-imaoka.github.io/posts/microservices-and-monolithic</link>
+      <guid isPermaLink="true">http://richard-imaoka.github.io/posts/microservices-and-monolithic</guid>
+    </item>
+    
+    
+    <item>
       <title>Software Liquidity and Monolithic Spread</title>
       <description><![CDATA[<h2>Replacing a huge, monolithic software system is more expensive than replacing small-pieced system</h2>
 
@@ -58,7 +341,7 @@
   We will cover that topic in the next article.
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/liquidity-and-monolithic</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/liquidity-and-monolithic</guid>
     </item>
@@ -147,7 +430,7 @@
   So from the liquidity perspective, it is critical to make your software easy to throw away, and create.
   Otherwise, you need to pay extra cost when you invest in creating or replacing software.
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/liquidity</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/liquidity</guid>
     </item>
@@ -220,7 +503,7 @@
   The iterative review process is so critical in decision making. At each iteration, you should look further and see what the best course of actions, given your risk tolerance.
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-and-replacement</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-and-replacement</guid>
     </item>
@@ -302,7 +585,7 @@ As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-c
       </ul>
   </ul>
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/replacement-cost-in-detail</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/replacement-cost-in-detail</guid>
     </item>
@@ -387,7 +670,7 @@ As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-c
   It is more to give sounding economic rationale, to "<strong>achieve</strong>" better Technology environment by replacement,
 
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/end-to-end-state-comparison-not-complete</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/end-to-end-state-comparison-not-complete</guid>
     </item>
@@ -537,7 +820,7 @@ As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-c
 <p>
   We will dig in further into this software pricing method in other articles.
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-2</guid>
     </item>
@@ -632,7 +915,7 @@ As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-c
 </figure>
 
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-complex-derivative-1</guid>
     </item>
@@ -726,7 +1009,7 @@ As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-c
 <p>
   So, you are not actually selling anything, but taking advantage of mis-priced (too high maintenance cost) of the software your rival had.
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-selling</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-selling</guid>
     </item>
@@ -811,7 +1094,7 @@ As in the <a href="http://localhost:3000/posts/end-to-end-state-comparison-not-c
   manage issues, etc. Also GitHub's WebHook can call other services, even other cloud services like CircleCI or Jenkins build processes
   to automate the software build procedure.
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-buying</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-buying</guid>
     </item>
@@ -938,7 +1221,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   In future articles, we model software as a complex derivative contract with unknown cash flows,
   and we will see how that enables the arbitrage argument to give a price of software.
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/arbitrage-software-intro</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/arbitrage-software-intro</guid>
     </item>
@@ -1043,7 +1326,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   I am excited to introduce methodologies, and more excited to hear about suggestions and critiques from others, to build this framework better and more robust!
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/software-engineering-craftmanship-vs-quantitative-analysis</guid>
     </item>
@@ -1092,7 +1375,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 </p>
 
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/journals-of-systems-and-software</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/journals-of-systems-and-software</guid>
     </item>
@@ -1181,7 +1464,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </figure>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-debt</guid>
     </item>
@@ -1234,7 +1517,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
   So, no one buys your software ... then its price must be zero?
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-asset</guid>
     </item>
@@ -1302,7 +1585,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore more about revenue change and software relationship in future articles.
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-income</guid>
     </item>
@@ -1370,7 +1653,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   We'll explore the possibilities of leveraging such metrics in later blog posts.
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-rescuetime</guid>
     </item>
@@ -1452,7 +1735,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses-time-tracking</guid>
     </item>
@@ -1534,7 +1817,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   <a href="https://www.rescuetime.com/">Rescue Time</a> is a very interesting technology we want to introduce more in the next article.
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/pricing-and-accounting-software-expenses</guid>
     </item>
@@ -1600,7 +1883,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/refactoring-and-technical-debt</guid>
     </item>
@@ -1677,7 +1960,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   Otherwise, the increased Technical Debt, thus increased maintenance cost will byte developers' legs at some point and they can no longer respond to their users' new requests quickly.
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/enhancement-and-technical-debt</guid>
     </item>
@@ -1791,7 +2074,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 <p>
   So, the important thing is again the <strong>balance</strong>. If your Technical Debt gets larger and larger, and at a certain point its maintenance cost exceeds its benefit, you start suffering.
 </p>]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/technical-debt-from-a-single-line</guid>
     </item>
@@ -1877,7 +2160,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 <p>However, this is still an informative paper providing probabilistic view on software project management.</p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/review-stochastic-cost-estimation-monte-carlo</guid>
     </item>
@@ -1940,7 +2223,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/uncertainty-as-risk-in-software-project</guid>
     </item>
@@ -2057,7 +2340,7 @@ They just didn't buy software only, but they bought the entire businesses and th
   Let's enter in the frameworks and in the field from the next article in the series.
 </p>
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/financial-engineering-in-software-projects</guid>
     </item>
@@ -2071,7 +2354,7 @@ They just didn't buy software only, but they bought the entire businesses and th
 
 
 ]]></description>
-      <pubDate>Mon Feb 01 2016 04:51:41 GMT+0900 (Tokyo Standard Time)</pubDate>
+      <pubDate>Fri Feb 05 2016 05:27:47 GMT+0900 (Tokyo Standard Time)</pubDate>
       <link>http://richard-imaoka.github.io/posts/about</link>
       <guid isPermaLink="true">http://richard-imaoka.github.io/posts/about</guid>
     </item>
